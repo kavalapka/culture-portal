@@ -45,6 +45,8 @@ do any changes you need
 * receive __Approve__
   * merge your branch to master
   * delete branch
+![](https://i.imgur.com/604Sxw2.png)
+![](https://i.imgur.com/nIU4QSV.png)
 * receive __Improvement Request__ with comments
   * fix remarks
   * push changes to your branch
