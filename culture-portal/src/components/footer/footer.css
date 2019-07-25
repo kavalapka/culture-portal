@@ -1,0 +1,39 @@
+.teamContainer_wrapper {
+    width:100%;
+}
+
+.teamContainer_title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.teamContainer_list {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teamContainer_item {
+    display: inline-block;
+    width: 130px;
+    height: 200px;
+    text-align: center;
+    font-size: .8em;
+    box-shadow: 0 0 20px rgba(0,0,0,.26);
+    margin: 9px;
+    transition: box-shadow .2s ease;
+    overflow: hidden;
+}
+
+.teamContainer_name{
+    margin: 30px 0;
+}
+
+.teamContainer_gitIcon {
+    width: 30%;
+}
+
+.teamContainer_gitIcon:hover {
+    width: 36%;
+}
