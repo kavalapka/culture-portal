@@ -1,0 +1,17 @@
+{
+  "authors": [
+    {
+      "id": "number",
+      "name": "string",
+      "science": "string",
+      "birth-date": "string",
+      "birth-place": "string",
+      "education": "string",
+      "activity": "object",
+      "family": "string",
+      "death": "string",
+      "exhibitions": "object",
+      "youtube": "string"
+    }
+  ]
+}
