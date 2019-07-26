@@ -1,4 +1,8 @@
 {
+  "welcome": "Welcome to your new Gatsby site!",
+  "russian": "Russian",
+  "belorussian": "Belorussian",
+  "english": "English",
   "authors": [
     {
       "id": 1,

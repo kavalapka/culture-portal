@@ -39,7 +39,6 @@ const Layout = ({ children }) => {
         <footer>
           <Footer />
           ©
-          {' '}
           {new Date().getFullYear()}
           , Built with
           {' '}

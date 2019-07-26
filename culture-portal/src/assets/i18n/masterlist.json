@@ -1,4 +1,8 @@
 {
+  "welcome": "string",
+  "russian": "string",
+  "belorussian": "string",
+  "english": "string",
   "authors": [
     {
       "id": "number",
@@ -13,5 +17,8 @@
       "exhibitions": "object",
       "youtube": "string"
     }
-  ]
+  ],
+  "key": {
+    "key1": "string"
+  }
 }
