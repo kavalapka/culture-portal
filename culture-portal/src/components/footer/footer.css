@@ -19,28 +19,19 @@
   width: 130px;
   height: 260px;
   text-align: center;
-  font-size: .8em;
   box-shadow: 0 0 20px rgba(0,0,0,.26);
   margin: 9px;
   transition: box-shadow .2s ease;
   overflow: hidden;
 }
 
-.teamContainer_avatar {
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.teamContainer_name,
-.teamContainer_nickName {
-  margin: 5px 0;
-}
-
-.teamContainer_gitIcon {
+#teamContainer_gitIcon {
+  margin: 10px 0;
   width: 30%;
+  border-radius: 50%;
 }
 
-.teamContainer_gitIcon:hover {
-  width: 25%;
+#teamContainer_gitIcon:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  transition: box-shadow .2s ease;
 }
