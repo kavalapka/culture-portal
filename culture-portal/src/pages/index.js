@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
+import Footer from '../components/footer';
 
 import Translate from '../components/translate';
 import '../components/translate/i18n';
@@ -24,6 +25,7 @@ const IndexPage = () => {
         <Image />
       </div>
       <Link to="/page-2/">Go to page 2</Link>
+      <Footer />
     </Layout>
   );
 };
