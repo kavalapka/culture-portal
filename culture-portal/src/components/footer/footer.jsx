@@ -1,5 +1,6 @@
 import React from 'react';
-import './footer.css';
+import Card from 'react-bootstrap/Card';
+import { uniqueId } from 'lodash';
 import gitIcon from './git.svg';
 
 export default class Footer extends React.Component {
@@ -49,17 +50,17 @@ export default class Footer extends React.Component {
     const { items } = this.state;
     return (
       <div className="teamContainer_wrapper">
-        <h3 className="teamContainer_title">Сайт делала команда из:</h3>
+        <h3 className="teamContainer_title">Development team:</h3>
         <div className="teamContainer_list">
           {items.length > 0 && items.map(item => (
-            <div className="teamContainer_item">
-              <img className="teamContainer_avatar" src={item.avatar} alt="avatar" />
-              <p className="teamContainer_name">{item.name}</p>
-              <p className="teamContainer_nickName">{item.nickName}</p>
-              <a target="_blank" rel="noopener noreferrer" href={item.git} className="teamContainer_gitLink">
-                <img className="teamContainer_gitIcon" src={gitIcon} alt="Github" />
-              </a>
-            </div>
+            <Card className="teamContainer_item" key={uniqueId()}>
+              <Card.Img src={item.avatar} alt="avatar" />
+              <Card.Title style={{ fontSize: '.8em' }}>{item.name}</Card.Title>
+              <Card.Subtitle style={{ fontSize: '.7em' }}>{item.nickName}</Card.Subtitle>
+              <Card.Link target="_blank" rel="noopener noreferrer" href={item.git}>
+                <Card.Img id="teamContainer_gitIcon" src={gitIcon} alt="Github" />
+              </Card.Link>
+            </Card>
           ))}
         </div>
       </div>
