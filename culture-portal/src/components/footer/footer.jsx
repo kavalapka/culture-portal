@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
 import './footer.css';
 import gitIcon from './git.svg';
 
@@ -52,14 +53,14 @@ export default class Footer extends React.Component {
         <h3 className="teamContainer_title">Сайт делала команда из:</h3>
         <div className="teamContainer_list">
           {items.length > 0 && items.map(item => (
-            <div className="teamContainer_item">
-              <img className="teamContainer_avatar" src={item.avatar} alt="avatar" />
-              <p className="teamContainer_name">{item.name}</p>
-              <p className="teamContainer_nickName">{item.nickName}</p>
-              <a target="_blank" rel="noopener noreferrer" href={item.git} className="teamContainer_gitLink">
-                <img className="teamContainer_gitIcon" src={gitIcon} alt="Github" />
-              </a>
-            </div>
+            <Card className="teamContainer_item">
+              <Card.Img src={item.avatar} alt="avatar" />
+              <Card.Title style={{ 'font-size': '.8em' }}>{item.name}</Card.Title>
+              <Card.Subtitle style={{ 'font-size': '.7em' }}>{item.nickName}</Card.Subtitle>
+              <Card.Link target="_blank" rel="noopener noreferrer" href={item.git}>
+                <Card.Img id="teamContainer_gitIcon" src={gitIcon} alt="Github" />
+              </Card.Link>
+            </Card>
           ))}
         </div>
       </div>
