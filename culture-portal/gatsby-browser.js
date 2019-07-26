@@ -6,4 +6,4 @@
 
 // You can delete this file if you're not using it
 
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
