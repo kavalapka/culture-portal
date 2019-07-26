@@ -1,0 +1,24 @@
+{
+  "welcome": "string",
+  "russian": "string",
+  "belorussian": "string",
+  "english": "string",
+  "authors": [
+    {
+      "id": "number",
+      "name": "string",
+      "science": "string",
+      "birth-date": "string",
+      "birth-place": "string",
+      "education": "string",
+      "activity": "object",
+      "family": "string",
+      "death": "string",
+      "exhibitions": "object",
+      "youtube": "string"
+    }
+  ],
+  "key": {
+    "key1": "string"
+  }
+}
