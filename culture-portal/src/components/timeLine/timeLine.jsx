@@ -19,6 +19,7 @@ const TimeLine = () => {
       authorsLang = jsonEN.authors;
       break;
     default:
+      authorsLang = jsonRU.authors;
       break;
   }
   const id = 1;
