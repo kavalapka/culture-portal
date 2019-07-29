@@ -12,10 +12,8 @@ import SEO from '../components/seo';
 
 const Authors = (props) => {
   console.log('Author props: ', props);
-  const edges = props.allJavascriptFrontmatter.edges;
-  const authors = edges.map(edge => {
-    return <li key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}</li>
-  })
+  const { edges } = props.allJavascriptFrontmatter;
+  const authors = edges.map(edge => <li key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}</li>);
   console.log('AUTHORS: ', authors);
   return (
     <ul>
@@ -23,7 +21,7 @@ const Authors = (props) => {
       {authors}
     </ul>
   );
-}
+};
 
 export const query = graphql`
 query {
@@ -51,7 +49,7 @@ class ListPage extends React.Component {
         <Link to="/">{t('Go back to the homepage')}</Link>
         <h1>{t('List of Authors')}</h1>
         <Button>Welcome to page 2</Button>
-        <StaticQuery query={query} render={ props => <Authors {...props} /> }></StaticQuery>
+        <StaticQuery query={query} render={props => <Authors {...props} />} />
         <ul>
           <Link to="/Tsyhanova">Tsyhanova</Link>
           <br />
@@ -63,4 +61,3 @@ class ListPage extends React.Component {
 }
 
 export default withTranslation()(ListPage);
-
