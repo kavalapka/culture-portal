@@ -8,9 +8,8 @@ const Translate = () => {
 
   const changeLanguage = (locale) => {
     i18n.changeLanguage(locale);
-    console.log('translate locale: ', locale)
-    // window.history.pushState({}, 'some title', `/${i18n.language}/Tsyhanova`);
-    const page = window.location.pathname.split('/').slice(-1)[0];
+    // eslint-disable-next-line no-undef
+    const page = window.location.pathname.split('/').slice(2).join('/');
     console.log('navigate to: ', locale, page);
     navigate(`/${locale}/${page}`);
   };

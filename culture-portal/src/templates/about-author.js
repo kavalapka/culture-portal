@@ -1,6 +1,7 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
+import Link from '../components/Link';
 
 import Layout from '../components/layout';
 
@@ -14,7 +15,7 @@ export default function Template({ data }) {
       <div className="blog-post">
         <Link to="/">Home</Link>
         <br />
-        <Link to="search">Search</Link>
+        <Link to="/search">Search</Link>
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.birth}</p>
         <p>{frontmatter.description}</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Link from '../components/Link';
 import { useTranslation } from 'react-i18next';
 
 import Layout from '../components/layout';

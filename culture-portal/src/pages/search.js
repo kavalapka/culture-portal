@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
+// import { Link } from 'gatsby';
 import { Button } from 'react-bootstrap';
 import { withTranslation } from 'react-i18next';
+import Link from '../components/Link';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -19,7 +21,7 @@ class ListPage extends React.Component {
         <Button>Welcome to page 2</Button>
         <ul>
           <Link to="/Tsyhanova">Tsyhanova</Link>
-          <br/>
+          <br />
           <Link to="/Avraam">Avraam</Link>
         </ul>
       </Layout>
