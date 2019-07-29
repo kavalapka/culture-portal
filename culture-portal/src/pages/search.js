@@ -1,9 +1,9 @@
 import React from 'react';
 
-// import { Link } from 'gatsby';
-import { Button } from 'react-bootstrap';
 import { withTranslation } from 'react-i18next';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
+import i18n from 'i18next';
+import PropTypes from 'prop-types';
 import Link from '../components/Link';
 
 import Layout from '../components/layout';
@@ -11,16 +11,22 @@ import SEO from '../components/seo';
 
 
 const Authors = (props) => {
-  console.log('Author props: ', props);
-  const { edges } = props.allJavascriptFrontmatter;
-  const authors = edges.map(edge => <li key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}</li>);
-  console.log('AUTHORS: ', authors);
+  const { authors } = props;
+  const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
+  const authorsList = authorsWithSelectedLang
+    .map(edge => <Link key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}</Link>);
   return (
     <ul>
-      <h1>IM LIST</h1>
-      {authors}
+      <h1>List</h1>
+      {authorsList}
     </ul>
   );
+};
+Authors.defaultProps = {
+  authors: [],
+};
+Authors.propTypes = {
+  authors: PropTypes.arrayOf(PropTypes.object),
 };
 
 export const query = graphql`
@@ -40,24 +46,40 @@ query {
 `;
 
 class ListPage extends React.Component {
+  constructor(props) {
+    super(props);
+    const { data } = this.props;
+
+    if (data.allJavascriptFrontmatter) {
+      this.state = { authors: data.allJavascriptFrontmatter.edges };
+    } else {
+      this.state = { authors: {} };
+    }
+  }
+
   render() {
-    const { t, data } = this.props;
-    console.log('props: ', this.props);
+    const { t } = this.props;
+    const { authors } = this.state;
     return (
       <Layout>
         <SEO title="Page two" />
         <Link to="/">{t('Go back to the homepage')}</Link>
         <h1>{t('List of Authors')}</h1>
-        <Button>Welcome to page 2</Button>
-        <StaticQuery query={query} render={props => <Authors {...props} />} />
-        <ul>
-          <Link to="/Tsyhanova">Tsyhanova</Link>
-          <br />
-          <Link to="/Avraam">Avraam</Link>
-        </ul>
+        <Authors authors={authors} />
       </Layout>
     );
   }
 }
 
 export default withTranslation()(ListPage);
+
+ListPage.defaultProps = {
+  data: {},
+};
+
+ListPage.propTypes = {
+  data: PropTypes.shape({
+    allJavascriptFrontmatter: PropTypes.object,
+  }),
+  t: PropTypes.func.isRequired,
+};

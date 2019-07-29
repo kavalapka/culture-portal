@@ -5,7 +5,7 @@ exports.frontmatter = {
   authorImage: 'http://tsyhanova.com/images/2017/07/26/tatsiana.jpg',
   path: '/by/Avraam',
   layoutType: 'aboutAuthor',
-  lng: 'ru',
+  lng: 'by',
   birth: 'BY BY 1978',
   birthPlace: 'Minsk',
   birthPlaceMap: [],
