@@ -6,14 +6,15 @@ import Link from '../components/Link';
 import Layout from '../components/layout';
 
 
-export default function Template({ data }) {
-  console.log('template data: ', data);
+export default function Template(props) {
+  const { data } = props;
+  console.log('template data: ', props);
   const { frontmatter } = data.javascriptFrontmatter;
   const { t } = useTranslation();
   return (
     <Layout>
       <div className="blog-post">
-        <Link to="/">Home</Link>
+        <Link to="/">{t('Home')}</Link>
         <br />
         <Link to="/search">Search</Link>
         <h1>{frontmatter.title}</h1>
