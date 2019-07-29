@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
-import Translate from '../translate/translate';
+import Translate from '../translate';
 import logo from '../../images/logo.png';
 import 'bootstrap/dist/css/bootstrap.css';
 
