@@ -3,6 +3,9 @@
   "russian": "Русский",
   "belorussian": "Белорусский",
   "english": "Английский",
+  "author-of-the-day": "Фотограф дня",
+  "more": "Подробнее",
+  "develop-team": "Команда разработчиков",
   "authors": [
     {
       "id": 1,
@@ -32,7 +35,8 @@
         "1925": "Выставка 6",
         "1926": "Выставка 7"
       },
-      "youtube": "https://youtu.be/gTpMQjc9k74"
+      "youtube": "https://youtu.be/gTpMQjc9k74",
+      "photo": "../assets/photo/dashkevich.jpg"
     },
     {
       "id": 2,
@@ -69,7 +73,8 @@
         "2007": "Проекты «Алиса в стране безумного чаепития» и «Город Солнца» - галерея «Giedre Bartelt Galerie» (г.Берлин, Германия)",
         "2008": "Галерея «Zoja Gallery» (г.Варшава, Польша)"
       },
-      "youtube": "https://www.youtube.com/watch?v=BHGn4Zk49vY"
+      "youtube": "https://www.youtube.com/watch?v=BHGn4Zk49vY",
+      "photo": "../assets/photo/klinov.jpeg"
     }
   ]
 }
