@@ -3,6 +3,7 @@
   "russian": "string",
   "belorussian": "string",
   "english": "string",
+  "home": "string",
   "authors": [
     {
       "id": "number",

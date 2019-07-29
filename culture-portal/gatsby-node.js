@@ -23,15 +23,19 @@ exports.createPages = async ({ actions, graphql }) => {
       }
     }
   `);
+  // path: `/${node.frontmatter.lng}${node.frontmatter.path}`,
   if (result.errors) {
     console.log(result.errors);
     throw new Error('Things broke, see console output above');
   }
   result.data.allJavascriptFrontmatter.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: `/${node.frontmatter.lng}${node.frontmatter.path}`,
       component: aboutAuthorTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        searchPath: node.frontmatter.path,
+        lang: node.frontmatter.lng,
+      }, // additional data can be passed via context
     });
   });
 

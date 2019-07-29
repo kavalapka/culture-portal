@@ -3,7 +3,7 @@ exports.frontmatter = {
   title: 'Авраам!!!!',
   description: 'Статья о Татьяне Цыгановой',
   authorImage: 'http://tsyhanova.com/images/2017/07/26/tatsiana.jpg',
-  path: '/ru/Avraam',
+  path: '/Avraam',
   layoutType: 'aboutAuthor',
   lng: 'ru',
   birth: 'РУССКИЙ 1978',

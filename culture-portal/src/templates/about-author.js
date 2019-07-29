@@ -14,7 +14,7 @@ export default function Template(props) {
   return (
     <Layout>
       <div className="blog-post">
-        <Link to="/">{t('Home')}</Link>
+        <Link to="/">{t('home')}</Link>
         <br />
         <Link to="/search">Search</Link>
         <h1>{frontmatter.title}</h1>
@@ -27,8 +27,8 @@ export default function Template(props) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    javascriptFrontmatter(frontmatter: {path: {eq: $path}}) {
+  query($searchPath: String!, $lang: String!) {
+    javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
     frontmatter {
       birth
       title
@@ -39,17 +39,4 @@ export const pageQuery = graphql`
   }
 `;
 
-// const AboutAuthor = () => (
-//   <Layout>
-//     <Link to="/page-1/">Home</Link>
-//     <Link to="/page-2/">List of Authors</Link>
-//     <h1>Author name</h1>
-//     <p>About author</p>
-//     <p>Here timeline</p>
-//     <p>Photo Exhibitions</p>
-//     <Button>I am Video</Button>
-//     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-//       <Image />
-//     </div>
-//   </Layout>
-// );
+

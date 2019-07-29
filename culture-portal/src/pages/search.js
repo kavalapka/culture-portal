@@ -14,7 +14,12 @@ const Authors = (props) => {
   const { authors } = props;
   const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
   const authorsList = authorsWithSelectedLang
-    .map(edge => <Link key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}</Link>);
+    .map(edge => (
+      <Link key={edge.node.frontmatter.title} to={edge.node.frontmatter.path}>
+        {edge.node.frontmatter.title}
+        <br />
+      </Link>
+    ));
   return (
     <ul>
       <h1>List</h1>
@@ -63,7 +68,7 @@ class ListPage extends React.Component {
     return (
       <Layout>
         <SEO title="Page two" />
-        <Link to="/">{t('Go back to the homepage')}</Link>
+        <Link to="/">{t('home')}</Link>
         <h1>{t('List of Authors')}</h1>
         <Authors authors={authors} />
       </Layout>
