@@ -5,6 +5,12 @@ import jsonEN from '../../assets/i18n/en.json';
 import jsonBE from '../../assets/i18n/be.json';
 import jsonRU from '../../assets/i18n/ru.json';
 
+function getLanguage() {
+  const lng = window.location.pathname.split('/')[1];
+  console.log(`DETECTED: ${lng}`);
+  return lng;
+}
+
 i18n
   // .use(LanguageDetector) // use to set basic language of user's browser language
   .use(initReactI18next)
@@ -21,6 +27,7 @@ i18n
         translations: jsonRU,
       },
     },
+    lng: getLanguage(),
     fallbackLng: 'ru',
     debug: true,
 
