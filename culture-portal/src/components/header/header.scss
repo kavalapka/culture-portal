@@ -5,16 +5,16 @@ header, .dropdown-menu {
   }
    .navbar{
     justify-content: space-around;
-    max-width: 1350px;
+    max-width: 1450px;
     margin: 0px auto;
   }
    .navbar-brand{
     width: 250px;
     height: 100px;
-    margin-right: 9vw;
-    margin-left:10vw;
+    margin-right: 10vw;
+    margin-left:13vw;
   }
-  .navbar-nav li{
+  .nav-item{
     margin-right: 3vw;
     &:last-child{
       padding-right:6vw; 
@@ -24,15 +24,16 @@ header, .dropdown-menu {
       text-decoration: none;
     }
   }
-  .navbar-nav li, a{
+  .nav-item, a{
     font-size: 1.2rem;
     padding-bottom:10px;
+    margin-top:auto;
+    margin-bottom:auto;
     padding-right:10px;
     outline:none;
-    width:max-content;
+    width:fit-content;
     color:#999999;
     border: none;
-    -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     outline:none;

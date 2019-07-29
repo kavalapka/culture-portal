@@ -1,32 +1,28 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
+import { Navbar, Nav, Image } from 'react-bootstrap';
 import Translate from '../translate';
 import logo from '../../images/logo.png';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Header = () => (
-  <header>
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <Link to="/"><img src={logo} alt="logo" className="navbar-brand mb-0" /></Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto mt-4">
-          <li className="nav-item active">
-            <Link to="/" activeStyle={{ color: '#fff' }}>
-              Главная
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/search" activeStyle={{ color: '#fff' }}>Поиск</Link>
-          </li>
-          <li className="nav-item"><Translate /></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-);
+const Header = () => {
+  const { t } = useTranslation();
+  return (
+    <header>
+      <Navbar expand="lg">
+        <Link to="/"><Navbar.Brand><Image src={logo} /></Navbar.Brand></Link>
+        <Navbar.Toggle aria-controls="navbar" />
+        <Navbar.Collapse id="navbar">
+          <Nav>
+            <Nav.Item><Link to="/" activeStyle={{ color: '#fff' }}>{t('menu.main')}</Link></Nav.Item>
+            <Nav.Item><Link to="/search" activeStyle={{ color: '#fff' }}>{t('menu.search')}</Link></Nav.Item>
+            <Nav.Item><Translate /></Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
+  );
+};
 
 export default Header;
