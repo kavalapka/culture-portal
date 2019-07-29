@@ -1,31 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 header, .dropdown-menu {
-    background-color: #6F5E69;
+    box-shadow: 0 20px 27px -18px rgba(160, 112, 146, 0.2);
     font-family: 'Roboto','Arial', sans-serif;
   }
    .navbar{
-    justify-content: space-around;
-    max-width: 1450px;
-    margin: 0px auto;
+     padding:0;
   }
    .navbar-brand{
-    width: 250px;
+    width: 350px;
     height: 100px;
-    margin-right: 10vw;
-    margin-left:13vw;
+    margin-right:1.5vw;
   }
-  .nav-item{
-    margin-right: 3vw;
-    &:last-child{
-      padding-right:6vw; 
-    }
+  .nav-item:not(:last-child){
+    margin-right: 5vw;
     & a:hover{
-      color:#fff;
+      color:#A07092;
       text-decoration: none;
     }
   }
   .nav-item, a{
     font-size: 1.2rem;
+    padding-right:10px;
     padding-bottom:10px;
     margin-top:auto;
     margin-bottom:auto;
