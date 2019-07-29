@@ -1,9 +1,10 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import { withTranslation } from 'react-i18next';
 import { uniqueId } from 'lodash';
 import gitIcon from './git.svg';
 
-export default class Footer extends React.Component {
+class Footer extends React.Component {
   state = {
     items: [
       {
@@ -47,9 +48,10 @@ export default class Footer extends React.Component {
 
   render() {
     const { items } = this.state;
+    const { t } = this.props;
     return (
       <div className="teamContainer_wrapper">
-        <h3 className="teamContainer_title">Development team:</h3>
+        <h3 className="teamContainer_title">{t('develop-team')}</h3>
         <div className="teamContainer_list">
           {items.length > 0 && items.map(item => (
             <Card className="teamContainer_item" key={uniqueId()}>
@@ -66,3 +68,5 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+export default withTranslation()(Footer);
