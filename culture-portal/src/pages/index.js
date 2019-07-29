@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
+import AuthorOfTheDay from '../components/author-of-the-day';
 
 import Translate from '../components/translate';
 import '../components/translate/i18n';
@@ -25,6 +26,7 @@ const IndexPage = () => {
         <Image />
       </div>
       <Link to="/page-2/">Go to page 2</Link>
+      <AuthorOfTheDay />
       <Footer />
     </Layout>
   );
