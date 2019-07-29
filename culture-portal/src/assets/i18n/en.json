@@ -1,11 +1,13 @@
 {
   "welcome": "Welcome to your new Gatsby site!",
+  "List of Authors": "List of Authors",
   "russian": "Russian",
   "belorussian": "Belorussian",
   "english": "English",
   "authors": [
     {
       "id": 1,
+      "pageName": "Dashkevich",
       "name": "Dashkevich Lev Urbanovich",
       "science": "Belarusian photographer, publicist, teacher, scientist, inventor",
       "birth-date": "February 12, 1882",
@@ -36,6 +38,7 @@
     },
     {
       "id": 2,
+      "pageName": "Klinau",
       "name": "Klinov Artur Aleksandrovich",
       "science": "Belarusian artist, designer, photographer, writer, screenwriter, editor-in-chief of the magazine “pARTisan” (2002)",
       "birth-date": "September 5, 1965",

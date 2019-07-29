@@ -1,25 +1,26 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-
-import { Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
+
 
 export default function Template({ data }) {
   console.log('template data: ', data);
   const { frontmatter } = data.javascriptFrontmatter;
+  const { t } = useTranslation();
   return (
-    <div className="blog-post">
-      <Link to="/">Home</Link>
-      <br />
-      <Link to="search">Search</Link>
-      <h1>{frontmatter.title}</h1>
-      <p>{frontmatter.birth}</p>
-      <p>{frontmatter.description}</p>
-      <img alt="" style={{ width: '200px' }} src={frontmatter.authorImage} />
-    </div>
+    <Layout>
+      <div className="blog-post">
+        <Link to="/">Home</Link>
+        <br />
+        <Link to="search">Search</Link>
+        <h1>{frontmatter.title}</h1>
+        <p>{frontmatter.birth}</p>
+        <p>{frontmatter.description}</p>
+        <img alt="" style={{ width: '200px' }} src={frontmatter.authorImage} />
+      </div>
+    </Layout>
   );
 }
 

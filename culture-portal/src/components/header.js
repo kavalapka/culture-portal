@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import Translate from './translate';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -32,6 +33,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <Translate />
       </h1>
     </div>
   </header>
