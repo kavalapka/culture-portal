@@ -23,7 +23,7 @@ const Translate = () => {
       <Form.Group>
         <Form.Control as="select" onChange={handleChange} value={i18n.language}>
           <option value="ru">{t('russian')}</option>
-          <option value="be">{t('belorussian')}</option>
+          <option value="by">{t('belorussian')}</option>
           <option value="en">{t('english')}</option>
         </Form.Control>
       </Form.Group>

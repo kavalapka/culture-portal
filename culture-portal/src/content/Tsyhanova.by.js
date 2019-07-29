@@ -1,13 +1,12 @@
 exports.frontmatter = {
 
-  path: '/en/Avraam',
-  title: 'Avraam',
-  description: 'Things about Tatyana Tsyhanova.',
+  title: 'BY Татьяна Цыганова BY',
+  description: 'Статья о Татьяне Цыгановой',
   authorImage: 'http://tsyhanova.com/images/2017/07/26/tatsiana.jpg',
-
+  path: '/by/Tsyhanova',
   layoutType: 'aboutAuthor',
-  lng: 'en',
-  birth: 'born in 1978',
+  lng: 'by',
+  birth: 'нарадзилась у 1978',
   birthPlace: 'Minsk',
   birthPlaceMap: [],
   timeline: [{}, {}, {}],

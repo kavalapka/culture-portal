@@ -2,13 +2,13 @@ import i18n from 'i18next';
 // import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import jsonEN from '../../assets/i18n/en.json';
-import jsonBE from '../../assets/i18n/be.json';
+import jsonBY from '../../assets/i18n/by.json';
 import jsonRU from '../../assets/i18n/ru.json';
 
 function getLanguage() {
   const lng = window.location.pathname.split('/')[1];
   console.log(`DETECTED: ${lng}`);
-  return lng;
+  return lng || 'ru';
 }
 
 i18n
@@ -20,8 +20,8 @@ i18n
       en: {
         translations: jsonEN,
       },
-      be: {
-        translations: jsonBE,
+      by: {
+        translations: jsonBY,
       },
       ru: {
         translations: jsonRU,

@@ -1,6 +1,8 @@
 import React from 'react';
-import Link from '../components/Link';
 import { useTranslation } from 'react-i18next';
+import { navigate } from 'gatsby';
+import i18n from 'i18next';
+import Link from '../components/Link';
 
 import Layout from '../components/layout';
 import Image from '../components/image';
@@ -11,6 +13,7 @@ import '../components/translate/i18n';
 
 const IndexPage = () => {
   const { t } = useTranslation();
+
   return (
     <Layout>
       <SEO title="Home" />
