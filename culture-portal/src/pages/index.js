@@ -6,12 +6,12 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
+import AuthorOfTheDay from '../components/author-of-the-day';
 
 import '../components/translate/i18n';
 
 const IndexPage = () => {
   const { t } = useTranslation();
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -23,6 +23,7 @@ const IndexPage = () => {
       <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
         <Image />
       </div>
+      <AuthorOfTheDay />
       <Footer />
     </Layout>
   );

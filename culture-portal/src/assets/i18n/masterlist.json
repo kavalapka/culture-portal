@@ -4,6 +4,9 @@
   "belorussian": "string",
   "english": "string",
   "home": "string",
+  "author-of-the-day": "string",
+  "more": "string",
+  "develop-team": "string",
   "authors": [
     {
       "id": "number",
@@ -16,10 +19,8 @@
       "family": "string",
       "death": "string",
       "exhibitions": "object",
-      "youtube": "string"
+      "youtube": "string",
+      "photo": "string"
     }
-  ],
-  "key": {
-    "key1": "string"
-  }
+  ]
 }

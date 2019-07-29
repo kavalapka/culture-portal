@@ -5,10 +5,12 @@
   "belorussian": "Belorussian",
   "english": "English",
   "home": "Home",
+  "author-of-the-day": "Photographer of the day",
+  "more": "Read more",
+  "develop-team": "Development team",
   "authors": [
     {
       "id": 1,
-      "pageName": "Dashkevich",
       "name": "Dashkevich Lev Urbanovich",
       "science": "Belarusian photographer, publicist, teacher, scientist, inventor",
       "birth-date": "February 12, 1882",
@@ -39,7 +41,6 @@
     },
     {
       "id": 2,
-      "pageName": "Klinau",
       "name": "Klinov Artur Aleksandrovich",
       "science": "Belarusian artist, designer, photographer, writer, screenwriter, editor-in-chief of the magazine “pARTisan” (2002)",
       "birth-date": "September 5, 1965",
