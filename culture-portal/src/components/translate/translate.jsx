@@ -10,7 +10,6 @@ const Translate = () => {
     i18n.changeLanguage(locale);
     // eslint-disable-next-line no-undef
     const page = window.location.pathname.split('/').slice(2).join('/');
-    console.log('navigate to: ', locale, page);
     navigate(`/${locale}/${page}`);
   };
 

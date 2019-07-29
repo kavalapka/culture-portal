@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 import Link from '../components/Link';
 
 import Layout from '../components/layout';
@@ -8,7 +9,6 @@ import Layout from '../components/layout';
 
 export default function Template(props) {
   const { data } = props;
-  console.log('template data: ', props);
   const { frontmatter } = data.javascriptFrontmatter;
   const { t } = useTranslation();
   return (
@@ -39,4 +39,12 @@ export const pageQuery = graphql`
   }
 `;
 
+Template.defaultProps = {
+  data: {},
+};
 
+Template.propTypes = {
+  data: PropTypes.shape({
+    javascriptFrontmatter: PropTypes.object,
+  }),
+};

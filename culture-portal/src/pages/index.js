@@ -1,7 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { navigate } from 'gatsby';
-import i18n from 'i18next';
 import Link from '../components/Link';
 
 import Layout from '../components/layout';

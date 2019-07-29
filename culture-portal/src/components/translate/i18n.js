@@ -6,8 +6,8 @@ import jsonBY from '../../assets/i18n/by.json';
 import jsonRU from '../../assets/i18n/ru.json';
 
 function getLanguage() {
+  // eslint-disable-next-line no-undef
   const lng = window.location.pathname.split('/')[1];
-  console.log(`DETECTED: ${lng}`);
   return lng || 'ru';
 }
 
