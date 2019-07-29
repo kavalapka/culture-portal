@@ -1,23 +1,12 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
-import './i18n';
+import Translate from '../translate/translate';
 import logo from '../../images/logo.png';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (locale) => {
-    i18n.changeLanguage(locale);
-  };
-
-  const handleChange = (event) => {
-    changeLanguage(`${event.target.value}`);
-    sessionStorage.setItem('language', event.target.value);
-  };
-
+  const { t } = useTranslation();
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bottom-sticky">
@@ -31,11 +20,7 @@ const Header = () => {
               <li className="nav-item active mb-0"><Link to="/" activeStyle={{ color: '#fff' }}>{t('menu.main')}</Link></li>
               <li className="nav-item mb-0"><Link to="/search/" activeStyle={{ color: '#fff' }}>{t('menu.search')}</Link></li>
             </ul>
-            <select value={sessionStorage.length === 0 ? 'ru' : sessionStorage.getItem('language')} className="form-control" onChange={handleChange}>
-              <option value="ru">{t('russian')}</option>
-              <option value="be">{t('belorussian')}</option>
-              <option value="en">{t('english')}</option>
-            </select>
+            <Translate />
           </div>
         </div>
       </nav>
