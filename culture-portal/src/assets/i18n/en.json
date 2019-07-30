@@ -1,6 +1,6 @@
 {
   "welcome": "Welcome to your new Gatsby site!",
-  "menu":{
+  "menu": {
     "main": "Home",
     "search": "Search"
   },
@@ -15,6 +15,7 @@
   "more": "Read more",
   "our": "Our ",
   "team": "team",
+  "timeline": "Biography",
   "authors": [
     {
       "id": 1,
