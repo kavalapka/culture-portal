@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Link from '../Link';
 import { useTranslation } from 'react-i18next';
 import { Navbar, Nav, Image } from 'react-bootstrap';
 import Translate from '../translate';

@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import Link from '../components/Link';
 
 import Layout from '../components/layout';
+import TimeLine from '../components/timeLine';
+import Video from  '../components/video';
 
 
 export default function Template(props) {
@@ -18,9 +20,12 @@ export default function Template(props) {
         <br />
         <Link to="/search">Search</Link>
         <h1>{frontmatter.title}</h1>
+        <Video />
         <p>{frontmatter.birth}</p>
         <p>{frontmatter.description}</p>
         <img alt="" style={{ width: '200px' }} src={frontmatter.authorImage} />
+        <TimeLine />
+
       </div>
     </Layout>
   );
