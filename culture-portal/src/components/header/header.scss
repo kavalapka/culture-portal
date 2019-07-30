@@ -24,10 +24,6 @@ header, .dropdown-menu {
   }
   .nav-item:not(:last-child){
     margin-right: 2vw;
-    & a:hover{
-      color:#A07092;
-      text-decoration: none;
-    }
   }
   .nav-item, a{
     font-size: 1.2rem;
@@ -44,4 +40,8 @@ header, .dropdown-menu {
     appearance: none;
     outline:none;
     cursor:pointer;
+    & a:hover{
+      color:#A07092;
+      text-decoration: none;
+    }
   }
