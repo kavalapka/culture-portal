@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import { useTranslation } from 'react-i18next';
+import { navigate } from 'gatsby';
 
 const Translate = () => {
   const { t, i18n } = useTranslation();
@@ -8,6 +9,9 @@ const Translate = () => {
 
   const changeLanguage = (locale) => {
     i18n.changeLanguage(locale);
+    // eslint-disable-next-line no-undef
+    const page = window.location.pathname.split('/').slice(2).join('/');
+    navigate(`/${locale}/${page}`);
   };
 
   const handleChange = (event) => {
@@ -20,7 +24,7 @@ const Translate = () => {
       <Form.Group className="mb-0">
         <Form.Control as="select" value={value} onChange={handleChange}>
           <option value="ru">{t('russian')}</option>
-          <option value="be">{t('belorussian')}</option>
+          <option value="by">{t('belorussian')}</option>
           <option value="en">{t('english')}</option>
         </Form.Control>
       </Form.Group>
