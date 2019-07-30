@@ -1,11 +1,21 @@
 {
   "welcome": "Добро пожаловать на наш новый Gatsby сайт!",
+  "menu": {
+    "main": "Главная",
+    "search": "Поиск"
+  },
   "russian": "Русский",
   "belorussian": "Белорусский",
   "english": "Английский",
+  "home": "На главную",
+  "Go back to the homepage": "Вернуться на главную",
   "author-of-the-day": "Фотограф дня",
+  "photographer": "Фотограф ",
+  "day": "дня",
   "more": "Подробнее",
-  "develop-team": "Команда разработчиков",
+  "our": "Наша ",
+  "team": "команда",
+  "timeline": "Биография",
   "authors": [
     {
       "id": 1,

@@ -1,11 +1,20 @@
 {
   "welcome": "string",
+  "menu": {
+    "main": "string",
+    "search": "string"
+  },
   "russian": "string",
   "belorussian": "string",
   "english": "string",
+  "home": "string",
   "author-of-the-day": "string",
+  "photographer": "string",
+  "day": "string",
   "more": "string",
-  "develop-team": "string",
+  "our": "string",
+  "team": "string",
+  "timeline": "string",
   "authors": [
     {
       "id": "number",

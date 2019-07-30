@@ -50,21 +50,24 @@ class Footer extends React.Component {
     const { items } = this.state;
     const { t } = this.props;
     return (
-      <div className="teamContainer_wrapper">
-        <h3 className="teamContainer_title">{t('develop-team')}</h3>
-        <div className="teamContainer_list">
+      <section className="our-team">
+        <h3 className="our-team__title">
+          <span>{t('our')}</span>
+          {t('team')}
+        </h3>
+        <div className="our-team__list">
           {items.length > 0 && items.map(item => (
-            <Card className="teamContainer_item" key={uniqueId()}>
+            <Card className="our-team__item" key={uniqueId()}>
               <Card.Img src={item.avatar} alt="avatar" />
               <Card.Title style={{ fontSize: '.8em' }}>{item.name}</Card.Title>
               <Card.Subtitle style={{ fontSize: '.7em' }}>{item.nickName}</Card.Subtitle>
               <Card.Link target="_blank" rel="noopener noreferrer" href={item.git}>
-                <Card.Img id="teamContainer_gitIcon" src={gitIcon} alt="Github" />
+                <Card.Img id="our-team__gitIcon" src={gitIcon} alt="Github" />
               </Card.Link>
             </Card>
           ))}
         </div>
-      </div>
+      </section>
     );
   }
 }
