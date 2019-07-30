@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    font-family: 'Roboto','Arial', sans-serif;
+    color:#666;
+    // &::placeholder{
+    //     font-family: 'Roboto','Arial', sans-serif;
+    // }
+}
