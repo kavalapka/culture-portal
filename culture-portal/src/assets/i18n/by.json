@@ -1,13 +1,10 @@
 {
   "welcome": "Сардэчна запрашаем на наш новы Gatsby сайт!",
-<<<<<<< HEAD:culture-portal/src/assets/i18n/be.json
   "menu":{
     "main": "Галоўная",
     "search": "Пошук"
   },
-=======
   "List of Authors": "Спис аутароу",
->>>>>>> master:culture-portal/src/assets/i18n/by.json
   "russian": "Рускі",
   "belorussian": "Беларускі",
   "english": "Англійскі",

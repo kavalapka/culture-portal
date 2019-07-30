@@ -1,13 +1,10 @@
 {
   "welcome": "Welcome to your new Gatsby site!",
-<<<<<<< HEAD
   "menu":{
     "main": "Home",
     "search": "Search"
   },
-=======
   "List of Authors": "List of Authors",
->>>>>>> master
   "russian": "Russian",
   "belorussian": "Belorussian",
   "english": "English",

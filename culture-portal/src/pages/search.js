@@ -1,14 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import Layout from '../components/layout';
-
-
-const SearchPage = () => (
-  <Layout />
-);
-
-export default SearchPage;
-=======
 
 import { withTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
@@ -98,4 +88,3 @@ ListPage.propTypes = {
   }),
   t: PropTypes.func.isRequired,
 };
->>>>>>> master
