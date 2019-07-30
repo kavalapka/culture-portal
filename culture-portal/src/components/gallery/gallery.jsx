@@ -12,7 +12,7 @@ const Gallery = () => {
     case 'ru':
       photoGallery = 'Фотогалерея';
       break;
-    case 'be':
+    case 'by':
       photoGallery = 'Фотагалерэя';
       break;
     case 'en':
@@ -27,7 +27,6 @@ const Gallery = () => {
       <h3 className="photo_gallery">{photoGallery}</h3>
       <Carousel
         width="100%"
-        // centerMode
         transitionTime={1000}
         emulateTouch
         infiniteLoop
@@ -39,11 +38,11 @@ const Gallery = () => {
           <img src="http://bdam.by/upload/iblock/610/6108616d09363f45586ee62ada16d4ec.jpg" alt="1" />
         </div>
         {/* <div>
-        <img src="http://bdam.by/upload/iblock/00b/00b842074f982d0499be2cd9ed20d12a.jpg" alt="2" />
-      </div>
-      <div>
-        <img src="http://bdam.by/upload/iblock/143/1436780d55553b4d0b4a7d4c36e351a8.jpg" alt="3" />
-      </div> */}
+          <img src="http://bdam.by/upload/iblock/00b/00b842074f982d0499be2cd9ed20d12a.jpg" alt="2" />
+        </div>
+        <div>
+          <img src="http://bdam.by/upload/iblock/143/1436780d55553b4d0b4a7d4c36e351a8.jpg" alt="3" />
+        </div> */}
         <div>
           <img src="http://bdam.by/upload/iblock/3e6/3e625a9f0e938280091a01651e066b24.jpg" alt="4" />
         </div>
