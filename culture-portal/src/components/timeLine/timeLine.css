@@ -1,7 +1,12 @@
 @import '~material-design-icons/iconfont/material-icons.css';
 
 .timeline_wrapper {
-  margin: 25px 90px;
-  text-align: center;
-    
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 24px;
+  padding: 7px 20px;
+}
+
+.timeline_title {
+  padding: 12px;
 }

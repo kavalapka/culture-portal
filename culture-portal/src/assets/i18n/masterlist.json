@@ -6,6 +6,7 @@
   "author-of-the-day": "string",
   "more": "string",
   "develop-team": "string",
+  "timeline": "string",
   "authors": [
     {
       "id": "number",

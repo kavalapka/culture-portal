@@ -1,49 +1,37 @@
 import React from 'react';
-import i18n from 'i18next';
 import { uniqueId } from 'lodash';
-import { Timeline, TimelineEvent } from 'react-event-timeline';
-import jsonEN from '../../assets/i18n/en.json';
-import jsonBE from '../../assets/i18n/be.json';
-import jsonRU from '../../assets/i18n/ru.json';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import { useTranslation } from 'react-i18next';
 
 const TimeLine = () => {
-  let authorsLang;
-  switch (i18n.language) {
-    case 'ru':
-      authorsLang = jsonRU.authors;
-      break;
-    case 'be':
-      authorsLang = jsonBE.authors;
-      break;
-    case 'en':
-      authorsLang = jsonEN.authors;
-      break;
-    default:
-      authorsLang = jsonRU.authors;
-      break;
-  }
-  const id = 1;
-  const { activity } = authorsLang.filter(el => el.id === id)[0];
+  const id = 0;
+  const { t } = useTranslation();
+  const activity = t(`authors.${id}.activity`, { returnObjects: true });
   const result = Object.keys(activity).map(key => [key, activity[key]]).sort();
   return (
     <div className="timeline_wrapper">
-      <h3>Временная линия:</h3>
-      <Timeline lineStyle={{ background: '#A07092', width: 3 }}>
+      <h3 className="timeline_title">{t('timeline')}</h3>
+      <Timeline lineColor={'#38292F'}>
         {result.map(el => (
-          <TimelineEvent
+          <TimelineItem
             key={uniqueId()}
-            title={el[0]}
-            titleStyle={{ fontWeight: 'bold', fontSize: 20 }}
-            icon={<i className="material-icons md-18">event</i>}
-            iconStyle={{ marginLeft: 0, marginTop: 2 }}
-            iconColor="#A07092"
-            bubbleStyle={{ width: 35, height: 35 }}
+            dateText={el[0]}
+            style={{ textAlign: 'center' }}
+            dateInnerStyle={{
+              background: '#38292F',
+              color: '#FFF',
+
+            }}
+            bodyContainerStyle={{
+              textAlign: 'left',
+              color: '#000',
+            }}
           >
             {el[1]}
-          </TimelineEvent>
+          </TimelineItem>
         ))}
       </Timeline>
-    </div>
+    </div >
   );
 };
 
