@@ -15,8 +15,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbar" />
         <Navbar.Collapse id="navbar">
           <Nav>
-            <Nav.Item><Link to="/" activeStyle={{ color: '#A07092' }}>{t('menu.main')}</Link></Nav.Item>
-            <Nav.Item><Link to="/search" activeStyle={{ color: '#A07092' }}>{t('menu.search')}</Link></Nav.Item>
+            <div className="wrapper">
+              <Nav.Item><Link to="/" activeStyle={{ color: '#A07092' }}>{t('menu.main')}</Link></Nav.Item>
+              <Nav.Item><Link to="/search" activeStyle={{ color: '#A07092' }}>{t('menu.search')}</Link></Nav.Item>
+            </div>
             <Nav.Item><Translate /></Nav.Item>
           </Nav>
         </Navbar.Collapse>
