@@ -3,7 +3,7 @@ import i18n from 'i18next';
 import { uniqueId } from 'lodash';
 import { Timeline, TimelineEvent } from 'react-event-timeline';
 import jsonEN from '../../assets/i18n/en.json';
-import jsonBE from '../../assets/i18n/be.json';
+import jsonBE from '../../assets/i18n/by.json';
 import jsonRU from '../../assets/i18n/ru.json';
 
 const TimeLine = () => {
@@ -12,7 +12,7 @@ const TimeLine = () => {
     case 'ru':
       authorsLang = jsonRU.authors;
       break;
-    case 'be':
+    case 'by':
       authorsLang = jsonBE.authors;
       break;
     case 'en':

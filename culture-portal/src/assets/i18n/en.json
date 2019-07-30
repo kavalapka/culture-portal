@@ -1,8 +1,11 @@
 {
   "welcome": "Welcome to your new Gatsby site!",
+  "List of Authors": "List of Authors",
   "russian": "Russian",
   "belorussian": "Belorussian",
   "english": "English",
+  "home": "Home",
+  "author-of-the-day": "Photographer of the day",
   "photographer": "Photographer ",
   "day": "of the day",
   "more": "Read more",
