@@ -4,6 +4,6 @@
   margin: 25px 90px;
 }
 
-.timeline_title {
-  padding: 12px;
+.timeline--wrapper {
+  padding: 0;
 }
