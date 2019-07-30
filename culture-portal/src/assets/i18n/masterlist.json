@@ -3,7 +3,8 @@
   "russian": "string",
   "belorussian": "string",
   "english": "string",
-  "author-of-the-day": "string",
+  "photographer": "string",
+  "day": "string",
   "more": "string",
   "develop-team": "string",
   "authors": [
