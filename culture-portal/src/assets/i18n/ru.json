@@ -6,8 +6,11 @@
   "home": "На главную",
   "Go back to the homepage": "Вернуться на главную",
   "author-of-the-day": "Фотограф дня",
+  "photographer": "Фотограф ",
+  "day": "дня",
   "more": "Подробнее",
-  "develop-team": "Команда разработчиков",
+  "our": "Наша ",
+  "team": "команда",
   "authors": [
     {
       "id": 1,

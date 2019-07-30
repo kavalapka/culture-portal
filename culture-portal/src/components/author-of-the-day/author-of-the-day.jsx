@@ -11,7 +11,10 @@ const AuthorOfTheDay = () => {
   const data = t(`authors.${id}`, { returnObjects: true });
   return (
     <section id="author-of-the-day">
-      <h2 id="author-of-the-day__title">{t('author-of-the-day')}</h2>
+      <h2 id="author-of-the-day__title">
+        <span>{t('photographer')}</span>
+        {t('day')}
+      </h2>
       <Card id="author__block">
         <Card.Img variant="top" id="author__photo" src={photo} />
         <Card.Body id="author__description">
@@ -19,7 +22,7 @@ const AuthorOfTheDay = () => {
           <Card.Text>{data['birth-date']}</Card.Text>
           <Card.Text>{data.science}</Card.Text>
           <Button id="author__button" style={{ margin: 'auto' }} variant="primary">
-            <Link to="/page-2/" id="author__link">{t('more')}</Link>
+            <Link to="/klinov" id="author__link">{t('more')}</Link>
           </Button>
         </Card.Body>
       </Card>
