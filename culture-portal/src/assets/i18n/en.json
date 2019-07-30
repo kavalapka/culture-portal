@@ -1,5 +1,9 @@
 {
   "welcome": "Welcome to your new Gatsby site!",
+  "menu":{
+    "main": "Home",
+    "search": "Search"
+  },
   "List of Authors": "List of Authors",
   "russian": "Russian",
   "belorussian": "Belorussian",

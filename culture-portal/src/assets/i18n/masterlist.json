@@ -1,5 +1,9 @@
 {
   "welcome": "string",
+  "menu":{
+    "main": "string",
+    "search": "string"
+  },
   "russian": "string",
   "belorussian": "string",
   "english": "string",

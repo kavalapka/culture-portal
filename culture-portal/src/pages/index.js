@@ -15,7 +15,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Link to="/page-2/">Go to page 2</Link>
       <br />
       <Link to="/search/">Search</Link>
       <h1>{t('welcome')}</h1>
@@ -23,6 +22,8 @@ const IndexPage = () => {
       <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
         <Image />
       </div>
+      <Link to="/author/">Go to Author Page</Link>
+      <Link to="/page-2/">Go to page 2</Link>
       <AuthorOfTheDay />
       <Footer />
     </Layout>
