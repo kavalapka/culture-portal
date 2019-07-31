@@ -21,7 +21,7 @@ export default function Template(props) {
         <p>{frontmatter.description}</p>
         <Photo className="avatar" imgsrc={frontmatter.authorImage} />
         <p>{frontmatter.science}</p>
-        <Video />
+        <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 1} />
         <TimeLine />
       </div>
     </Layout>
@@ -36,6 +36,8 @@ export const pageQuery = graphql`
       name
       science
       authorImage
+      youtube
+      youtubeStart
     }
   }
   }

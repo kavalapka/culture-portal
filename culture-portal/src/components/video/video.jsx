@@ -19,12 +19,20 @@ class Video extends React.Component {
 
   render() {
     const { isOpen } = this.state;
+    const { youtubeId, start } = this.props;
+    const options = {
+      start,
+      color: 'white',
+      autoplay: 1,
+    };
     return (
       <div className="video-block">
         <ModalVideo
           channel="youtube"
           isOpen={isOpen}
-          videoId="L61p2uyiMSo"
+          videoId={youtubeId}
+          youtube={options}
+          color="white"
           onClose={() => this.setState({ isOpen: false })}
         />
         <Button variant="light" size="lg" className="video-button" role="button" onClick={this.openModal}>Open Video</Button>
