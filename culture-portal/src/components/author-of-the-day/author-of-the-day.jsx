@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'gatsby';
-import photo from '../../assets/photo/klinov.jpeg';
+import photo from '../../assets/works/klinov.jpeg';
 
 const AuthorOfTheDay = () => {
   const id = 1;
