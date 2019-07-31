@@ -7,6 +7,7 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
 import AuthorOfTheDay from '../components/author-of-the-day';
+import MainSlider from '../components/main-slider/main-slider';
 
 import '../components/translate/i18n';
 
@@ -15,6 +16,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <MainSlider />
       <br />
       <Link to="/search/">Search</Link>
       <h1>{t('welcome')}</h1>
