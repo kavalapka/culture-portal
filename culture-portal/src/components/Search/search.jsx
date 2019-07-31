@@ -1,25 +1,34 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { uniqueId } from 'lodash';
 import SearchDebounce from '../SearchDebounce';
 import Author from '../SearchAuthor';
 
-const Search = () => {
+const Search = (props) => {
   const { t } = useTranslation();
-  const basicAuthors = t('authors', { returnObjects: true });
+  const { basicAuthors } = props;
   const [authors, setAuthors] = useState(basicAuthors);
   const handleChange = (text) => {
     const searchText = text.toLowerCase();
     setAuthors(
-      basicAuthors.filter(author => author.name.toLowerCase().includes(searchText) || author['birth-date'].toLowerCase().includes(searchText)),
+      basicAuthors.filter(
+        author => author.node.frontmatter.name.toLowerCase().includes(searchText)
+        || author.node.frontmatter.birthDate.toLowerCase().includes(searchText),
+      ).sort((a, b) => {
+        const a1 = a.node.frontmatter.name.toLowerCase().split(' ').join('');
+        const b1 = b.node.frontmatter.name.toLowerCase().split(' ').join('');
+        if (a1 < b1) { return -1; }
+        if (a1 > b1) { return 1; }
+        return 0;
+      }),
     );
   };
-
   return (
     <div>
       <SearchDebounce handleChange={(...args) => handleChange(...args)} t={t} />
       <div>
         {
-          authors.length > 0 ? authors.map(author => <div key={author.id}><Author author={author} t={t} /></div>) : 'Nothing find'
+          authors.length > 0 ? authors.map(author => <div key={uniqueId}><Author author={author.node.frontmatter} t={t} /></div>) : 'Nothing find'
           }
       </div>
     </div>
