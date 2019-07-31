@@ -1,12 +1,10 @@
 exports.frontmatter = {
-  id: 1,
-  path: '/Dashkevich',
+  path: '/dashkevich',
   lng: 'ru',
   name: 'Дашкевич Лев Урбанович',
-  photo: 'dashkevich.jpg',
   science: 'Белорусский фотограф, публицист, педагог, ученый, изобретатель',
-  'birth-date': '12 февраля 1882',
-  'birth-place': 'Минск',
+  birthDate: '12 февраля 1882',
+  birthPlace: 'Минск',
   education: 'Получил образование в Дижонском университете и Высшей школе графических искусств в Париже (отделение фотографии)',
   activity: {
     1911: 'С 1911 году начал печататься в научных изданиях (La Nature. Paris)',
@@ -30,4 +28,16 @@ exports.frontmatter = {
     1926: 'Выставка 7',
   },
   youtube: 'https://youtu.be/gTpMQjc9k74',
+  authorImage: 'dashkevich.jpg',
+  works: [
+    'dashkevich_1.jpg',
+    'dashkevich_2.jpg',
+    'dashkevich_3.jpg',
+    'dashkevich_4.jpg',
+    'dashkevich_5.jpg',
+    'dashkevich_6.jpg',
+    'dashkevich_7.jpg',
+    'dashkevich_8.jpg',
+    'dashkevich_9.jpg',
+  ],
 };

@@ -1,12 +1,10 @@
 exports.frontmatter = {
-  id: 1,
-  path: '/Dashkevich',
+  path: '/dashkevich',
   lng: 'by',
   name: 'Дашкевіч Леў Урбанавіч',
-  photo: 'dashkevich.jpg',
   science: 'Беларускі фотамастак, навуковец, вынаходнік, публіцыст, педагог',
-  'birth-date': '12 лютага 1882 (75 гадоў)',
-  'birth-place': 'Мінск, Мінскі павет, Мінская губерня, Расійская імперыя',
+  birthDate: '12 лютага 1882 (75 гадоў)',
+  birthPlace: 'Мінск, Мінскі павет, Мінская губерня, Расійская імперыя',
   education: 'Мінская мужчынская гімназія Віленскі інтэрнат-канквіт Варшаўскі ўніверсітэт Дыжонскі ўніверсітэт',
   activity: {
     1911: 'З 1911 г. пачаў друкавацца ў навуковых выданнях (La Nature. Paris)',
@@ -30,4 +28,16 @@ exports.frontmatter = {
     1926: 'Выстаўка 7',
   },
   youtube: 'https://youtu.be/gTpMQjc9k74',
+  authorImage: 'dashkevich.jpg',
+  works: [
+    'dashkevich_1.jpg',
+    'dashkevich_2.jpg',
+    'dashkevich_3.jpg',
+    'dashkevich_4.jpg',
+    'dashkevich_5.jpg',
+    'dashkevich_6.jpg',
+    'dashkevich_7.jpg',
+    'dashkevich_8.jpg',
+    'dashkevich_9.jpg',
+  ],
 };
