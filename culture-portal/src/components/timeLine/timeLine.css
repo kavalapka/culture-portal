@@ -2,6 +2,8 @@
 
 .timeline_wrapper {
   margin: 25px 90px;
-  text-align: center;
-    
+}
+
+.timeline--wrapper {
+  padding: 0;
 }
