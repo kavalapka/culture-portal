@@ -8,7 +8,7 @@ const path = require('path');
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
-  const aboutAuthorTemplate = path.resolve('src/templates/about-author.js');
+  const aboutAuthorTemplate = path.resolve('src/templates/about-author.jsx');
   const result = await graphql(`
     {
       allJavascriptFrontmatter {

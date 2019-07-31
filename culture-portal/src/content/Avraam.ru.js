@@ -6,7 +6,7 @@ exports.frontmatter = {
   path: '/Avraam',
   layoutType: 'aboutAuthor',
   lng: 'ru',
-  birth: 'РУССКИЙ 1978',
+  birthDate: 'РУССКИЙ 1978',
   birthPlace: 'Minsk',
   birthPlaceMap: [],
   timeline: [{}, {}, {}],

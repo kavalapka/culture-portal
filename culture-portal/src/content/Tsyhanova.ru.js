@@ -6,7 +6,7 @@ exports.frontmatter = {
   path: '/Tsyhanova',
   layoutType: 'aboutAuthor',
   lng: 'ru',
-  birth: 'born in 1978',
+  birthDate: 'born in 1978',
   birthPlace: 'Minsk',
   birthPlaceMap: [],
   timeline: [{}, {}, {}],

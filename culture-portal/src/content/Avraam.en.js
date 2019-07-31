@@ -7,7 +7,7 @@ exports.frontmatter = {
 
   layoutType: 'aboutAuthor',
   lng: 'en',
-  birth: 'born in 1978',
+  birthDate: 'born in 1978',
   birthPlace: 'Minsk',
   birthPlaceMap: [],
   timeline: [{}, {}, {}],

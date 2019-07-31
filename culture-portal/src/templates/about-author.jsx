@@ -17,10 +17,10 @@ export default function Template(props) {
         <Link to="/">{t('home')}</Link>
         <br />
         <Link to="/search">Search</Link>
-        <h1>{frontmatter.title}</h1>
-        <p>{frontmatter.birth}</p>
+        <h1>{frontmatter.name}</h1>
+        <p>{frontmatter.birthDate}</p>
         <p>{frontmatter.description}</p>
-        <img alt="" style={{ width: '200px' }} src={frontmatter.authorImage} />
+        <img alt="" style={{ width: '200px' }} src={require(`../assets/works/${frontmatter.authorImage}`)} />
       </div>
     </Layout>
   );
@@ -30,8 +30,8 @@ export const pageQuery = graphql`
   query($searchPath: String!, $lang: String!) {
     javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
     frontmatter {
-      birth
-      title
+      birthDate
+      name
       description
       authorImage
     }
