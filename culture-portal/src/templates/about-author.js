@@ -20,10 +20,9 @@ export default function Template(props) {
   return (
     <Layout>
       <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <Photo className="avatar" imgsrc={frontmatter.authorImage} />
-        <p>{frontmatter.birth}</p>
-        <p>{frontmatter.description}</p>
+        <h1>{frontmatter.name}</h1>
+        <Photo className="avatar" imgsrc={frontmatter.photo} />
+        <p>{frontmatter.science}</p>
         <Video />
         <TimeLine />
       </div>
@@ -35,10 +34,9 @@ export const pageQuery = graphql`
   query($searchPath: String!, $lang: String!) {
     javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
     frontmatter {
-      birth
-      title
-      description
-      authorImage
+      name
+      science
+      photo
     }
   }
   }

@@ -15,8 +15,8 @@ const Authors = (props) => {
   const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
   const authorsList = authorsWithSelectedLang
     .map(edge => (
-      <Link key={edge.node.frontmatter.title} to={edge.node.frontmatter.path}>
-        {edge.node.frontmatter.title}
+      <Link key={edge.node.frontmatter.name} to={edge.node.frontmatter.path}>
+        {edge.node.frontmatter.name}
         <br />
       </Link>
     ));
@@ -40,7 +40,7 @@ query {
     edges {
       node {
         frontmatter {
-          title
+          name
           path
           lng
         }
