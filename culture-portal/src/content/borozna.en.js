@@ -28,7 +28,8 @@ exports.frontmatter = {
     2010: '"Europe Plus" (with E. Kenigsberg). Gallery of the High Folk School of Vienna-Hietzing, Vienna, Austria\n"Reflections" Exhibition of Belarusian photography. Kyiv City Art Gallery "Lavra", Kiev, Ukraine',
     2011: '"Belarusian Still Life" Republican Art Gallery of the Belarusian Union of Artists, Minsk',
   },
-  youtube: 'https://youtu.be/jT-Zq10ac8Q?t=54',
+  youtube: 'jT-Zq10ac8Q',
+  youtubeStart: 54,
   authorImage: 'borozna.jpg',
   works: [
     'borozna_1.jpg',

@@ -34,8 +34,8 @@ exports.frontmatter = {
     2007: 'Projects "Alice in the country of mad tea drinking" and "City of the Sun" - gallery "Giedre Bartelt Galerie" (Berlin, Germany)',
     2008: 'Gallery "Zoja Gallery" (Warsaw, Poland)',
   },
-  youtube: 'https://www.youtube.com/watch?v=BHGn4Zk49vY',
-  authorImage: 'klinov.jpeg',
+  youtube: 'BHGn4Zk49vY',
+  authorImage: 'klinov.jpg',
   works: [
     'klinov_1.jpg',
     'klinov_2.jpg',

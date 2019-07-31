@@ -34,8 +34,8 @@ exports.frontmatter = {
     2007: 'Праекты «Аліса ў краіне вар’яцкага чаяпіцця» і «Горад СОНца» — галерэя «Giedre Bartelt Galerie» (г.Берлін, Германія)',
     2008: 'Галерэя «Zoja Gallery» (г.Варшава, Польшча)',
   },
-  youtube: 'https://www.youtube.com/watch?v=BHGn4Zk49vY',
-  authorImage: 'klinov.jpeg',
+  youtube: 'BHGn4Zk49vY',
+  authorImage: 'klinov.jpg',
   works: [
     'klinov_1.jpg',
     'klinov_2.jpg',

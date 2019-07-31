@@ -22,7 +22,7 @@ exports.frontmatter = {
     1935: 'Book about the journey from Vilna to Lake Naroche with 38 photographs',
     1937: 'Photo illustrations for the city guide of Julius Clos',
   },
-  youtube: 'https://www.youtube.com/watch?v=Ato3OAWjdDA',
+  youtube: 'Ato3OAWjdDA',
   authorImage: 'bulgak.jpg',
   works: [
     'bulgak_1.jpg',

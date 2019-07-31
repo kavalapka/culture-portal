@@ -34,8 +34,8 @@ exports.frontmatter = {
     2007: 'Проекты «Алиса в стране безумного чаепития» и «Город Солнца» - галерея «Giedre Bartelt Galerie» (г.Берлин, Германия)',
     2008: 'Галерея «Zoja Gallery» (г.Варшава, Польша)',
   },
-  youtube: 'https://www.youtube.com/watch?v=BHGn4Zk49vY',
-  authorImage: 'klinov.jpeg',
+  youtube: 'BHGn4Zk49vY',
+  authorImage: 'klinov.jpg',
   works: [
     'klinov_1.jpg',
     'klinov_2.jpg',

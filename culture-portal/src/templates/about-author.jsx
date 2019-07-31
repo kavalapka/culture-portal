@@ -21,7 +21,7 @@ export default function Template(props) {
         <p>{frontmatter.description}</p>
         <Photo className="avatar" imgsrc={frontmatter.authorImage} />
         <p>{frontmatter.science}</p>
-        <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 1} />
+        <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine />
       </div>
     </Layout>

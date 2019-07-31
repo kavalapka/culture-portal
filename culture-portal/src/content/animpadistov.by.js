@@ -21,6 +21,7 @@ exports.frontmatter = {
     2013: 'Фотавыстаўка «Under Ground» (г.Торунь, Польшча)',
   },
   youtube: 'mO-yWp-Npng',
+  youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',
   works: [
     'animpadistov_1.jpg',
