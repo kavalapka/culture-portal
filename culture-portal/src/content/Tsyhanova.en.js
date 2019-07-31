@@ -2,7 +2,7 @@ exports.frontmatter = {
 
   title: 'Tatyana Tsyhanova',
   description: 'Things about Tatyana Tsyhanova.',
-  authorImage: 'http://tsyhanova.com/images/2017/07/26/tatsiana.jpg',
+  authorImage: 'tsyhanova11.png',
   path: '/Tsyhanova',
   layoutType: 'aboutAuthor',
   lng: 'en',

@@ -3,7 +3,7 @@ exports.frontmatter = {
   path: '/Avraam',
   title: 'Avraam',
   description: 'Things about Tatyana Tsyhanova.',
-  authorImage: 'http://tsyhanova.com/images/2017/07/26/tatsiana.jpg',
+  authorImage: 'tsyhanova11.png',
 
   layoutType: 'aboutAuthor',
   lng: 'en',

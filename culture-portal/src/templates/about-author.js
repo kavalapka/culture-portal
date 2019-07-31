@@ -20,14 +20,11 @@ export default function Template(props) {
   return (
     <Layout>
       <div className="blog-post">
-        <Link to="/">{t('home')}</Link>
-        <br />
-        <Link to="/search">Search</Link>
         <h1>{frontmatter.title}</h1>
-        <Video />
+        <Photo className="avatar" imgsrc={frontmatter.authorImage} />
         <p>{frontmatter.birth}</p>
         <p>{frontmatter.description}</p>
-        <Photo className="avatar" imgsrc={frontmatter.authorImage} />
+        <Video />
         <TimeLine />
       </div>
     </Layout>
