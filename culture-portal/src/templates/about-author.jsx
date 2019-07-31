@@ -20,7 +20,7 @@ export default function Template(props) {
         <h1>{frontmatter.name}</h1>
         <p>{frontmatter.birthDate}</p>
         <p>{frontmatter.description}</p>
-        <img alt="" style={{ width: '200px' }} src={require(`../assets/works/${frontmatter.authorImage}`)} />
+        <img alt="" style={{ width: '300px' }} src={require(`../assets/works/${frontmatter.authorImage}`)} />
       </div>
     </Layout>
   );
