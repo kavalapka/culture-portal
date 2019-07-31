@@ -2,7 +2,7 @@ exports.frontmatter = {
 
   title: 'Татьяна Цыганова',
   description: 'Статья о Татьяне Цыгановой',
-  authorImage: 'http://tsyhanova.com/images/2017/07/26/tatsiana.jpg',
+  authorImage: 'logo.png',
   path: '/Tsyhanova',
   layoutType: 'aboutAuthor',
   lng: 'ru',

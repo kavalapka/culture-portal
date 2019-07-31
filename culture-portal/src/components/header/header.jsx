@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from '../Link';
 import { useTranslation } from 'react-i18next';
 import { Navbar, Nav, Image } from 'react-bootstrap';
+import Link from '../Link';
 import Translate from '../translate';
 import logo from '../../images/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
