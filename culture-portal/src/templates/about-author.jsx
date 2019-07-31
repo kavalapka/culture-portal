@@ -1,9 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import Photo from '../components/image';
-import Link from '../components/Link';
 
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
@@ -14,7 +12,6 @@ import './about-author.css';
 export default function Template(props) {
   const { data } = props;
   const { frontmatter } = data.javascriptFrontmatter;
-  const { t } = useTranslation();
 
   return (
     <Layout>
