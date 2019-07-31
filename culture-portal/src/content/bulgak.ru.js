@@ -22,7 +22,7 @@ exports.frontmatter = {
     1935: 'Книга про путешествие из Вильно на оз.Нарочь с 38 фотоснимками',
     1937: 'Фотоиллюстрации для путеводителя по городу Юлиуша Клоса',
   },
-  youtube: 'https://www.youtube.com/watch?v=Ato3OAWjdDA',
+  youtube: 'Ato3OAWjdDA',
   authorImage: 'bulgak.jpg',
   works: [
     'bulgak_1.jpg',

@@ -21,7 +21,7 @@ exports.frontmatter = {
     1935: 'Кніга пра падарожжа з Вільні на оз.Нарочь з 38 фотаздымкамі',
     1937: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
   },
-  youtube: 'https://www.youtube.com/watch?v=Ato3OAWjdDA',
+  youtube: 'Ato3OAWjdDA',
   authorImage: 'bulgak.jpg',
   works: [
     'bulgak_1.jpg',

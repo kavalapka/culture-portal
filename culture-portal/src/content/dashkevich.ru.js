@@ -27,7 +27,7 @@ exports.frontmatter = {
     1925: 'Выставка 6',
     1926: 'Выставка 7',
   },
-  youtube: 'https://youtu.be/gTpMQjc9k74',
+  youtube: 'gTpMQjc9k74',
   authorImage: 'dashkevich.jpg',
   works: [
     'dashkevich_1.jpg',

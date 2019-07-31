@@ -19,7 +19,8 @@ exports.frontmatter = {
     2012: 'Photo exhibition "Under Ground" at the Café Galerie (Leverkusen, Germany)',
     2013: 'Photo exhibition "Under Ground" (Torun, Poland)',
   },
-  youtube: 'https://www.youtube.com/watch?v=mO-yWp-Npng&t=1377s',
+  youtube: 'mO-yWp-Npng',
+  youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',
   works: [
     'animpadistov_1.jpg',
