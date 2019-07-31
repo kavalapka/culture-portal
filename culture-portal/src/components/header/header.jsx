@@ -10,8 +10,8 @@ const Header = () => {
   const { t } = useTranslation();
   return (
     <header>
-      <Navbar expand="lg">
-        <Link to="/"><Navbar.Brand><Image src={logo} /></Navbar.Brand></Link>
+      <Navbar expand="md">
+        <Navbar.Brand><Link to="/"><Image src={logo} /></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar" />
         <Navbar.Collapse id="navbar">
           <Nav>
