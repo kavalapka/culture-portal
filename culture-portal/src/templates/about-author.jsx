@@ -6,6 +6,7 @@ import Photo from '../components/image';
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
+import Exhibition from '../components/exhibition';
 
 import './about-author.css';
 
@@ -21,6 +22,7 @@ export default function Template(props) {
         <p>{frontmatter.description}</p>
         <Photo className="avatar" imgsrc={frontmatter.authorImage} />
         <p>{frontmatter.science}</p>
+        <Exhibition exhibitions={frontmatter.exhibitions} />
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine />
       </div>
@@ -38,6 +40,12 @@ export const pageQuery = graphql`
       authorImage
       youtube
       youtubeStart
+      exhibitions {
+        date
+        name
+        photo
+      }
+      works
     }
   }
   }

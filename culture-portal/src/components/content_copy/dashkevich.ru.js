@@ -31,6 +31,7 @@ exports.frontmatter = {
     },
   ],
   youtube: 'gTpMQjc9k74',
+  youtubeStart: 0,
   authorImage: 'dashkevich.jpg',
   works: [
     'dashkevich_1.jpg',
