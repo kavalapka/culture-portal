@@ -1,4 +1,5 @@
 import React from 'react';
+import { uniqueId } from 'lodash';
 
 import { withTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
@@ -15,8 +16,8 @@ const Authors = (props) => {
   const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
   const authorsList = authorsWithSelectedLang
     .map(edge => (
-      <Link key={edge.node.frontmatter.title} to={edge.node.frontmatter.path}>
-        {edge.node.frontmatter.title}
+      <Link key={uniqueId()} to={edge.node.frontmatter.path}>
+        {edge.node.frontmatter.name}
         <br />
       </Link>
     ));
@@ -40,7 +41,7 @@ query {
     edges {
       node {
         frontmatter {
-          title
+          name
           path
           lng
         }
