@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   withGoogleMap,
   GoogleMap,
   Marker,
   withScriptjs
-} from "react-google-maps";
+} from 'react-google-maps';
+
 
 const Markers = props => {
   return (
@@ -14,13 +15,6 @@ const Markers = props => {
           <Marker
             key={place.id}
             position={{ lat: place.lat, lng: place.lng }}
-            draggable={true}
-            onDragstart={() => {
-              return handleDragStart();
-            }}
-            onDragend={() => {
-              return handleDragEnd();
-            }}
           />
         );
       })}
