@@ -27,6 +27,21 @@ exports.frontmatter = {
       date: 1921,
       exh: 'Выставка 2',
     },
+    {
+      date: 1920,
+      name: 'Выставка 3',
+      photo: 'dashkevich_3.jpg',
+    },
+    {
+      date: 1921,
+      name: 'Выставка 4',
+      photo: 'dashkevich_4.jpg',
+    },
+    {
+      date: 1920,
+      name: 'Выставка 5',
+      photo: 'dashkevich_5.jpg',
+    },
   ],
   youtube: 'gTpMQjc9k74',
   authorImage: 'dashkevich.jpg',

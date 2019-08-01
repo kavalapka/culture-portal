@@ -1,0 +1,56 @@
+.our-team__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.exhib__group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.exhib__card {
+  width: 16rem;
+  border: none;
+  border-radius: unset;
+  box-shadow: 0 0 20px rgba(0,0,0,.26);
+  margin: 9px;
+  transition: box-shadow .2s ease;
+  overflow: hidden;
+  color: white;
+}
+
+.exhib__card div.gatsby-image-wrapper {
+  max-height: 10rem;
+}
+
+.exhib__overlay {
+  margin: -0.6rem 0.2rem;
+}
+
+.exhib__card div.card-header {
+  background: white;
+  border: none;
+}
+
+.our-team__item {
+  display: inline-block;
+  width: 135px;
+  height: 260px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,.26);
+  margin: 9px;
+  transition: box-shadow .2s ease;
+  overflow: hidden;
+}
+
+.our-team__item:first-child {
+  margin-left: 0;
+}
+
+.our-team__item:last-child {
+  margin-right: 0;
+}
+
