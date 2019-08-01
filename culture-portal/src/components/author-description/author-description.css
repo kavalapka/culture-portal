@@ -1,0 +1,29 @@
+.author-description_wrapper {
+  margin: 35px 0;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+#author-description_block {
+  flex-direction: row;
+  background: none;
+  border: none;
+}
+
+#author-description_photo {
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #author-description_block {
+      flex-direction: column;
+  }
+}
+
+#author-description_title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: bold;
+}
