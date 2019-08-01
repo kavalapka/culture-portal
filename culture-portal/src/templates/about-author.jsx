@@ -6,7 +6,7 @@ import Photo from '../components/image';
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
-
+import GoogleMap from '../components/map'
 import './about-author.css';
 
 export default function Template(props) {
@@ -23,6 +23,7 @@ export default function Template(props) {
         <p>{frontmatter.science}</p>
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine />
+        <GoogleMap/>
       </div>
     </Layout>
   );
