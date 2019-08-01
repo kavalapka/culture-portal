@@ -1,30 +1,20 @@
 import React from 'react';
-import { uniqueId } from 'lodash';
-
 import { withTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 import i18n from 'i18next';
 import PropTypes from 'prop-types';
-import Link from '../components/Link';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Search from '../components/Search';
 
 
 const Authors = (props) => {
   const { authors } = props;
   const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
-  const authorsList = authorsWithSelectedLang
-    .map(edge => (
-      <Link key={uniqueId()} to={edge.node.frontmatter.path}>
-        {edge.node.frontmatter.name}
-        <br />
-      </Link>
-    ));
   return (
-    <ul>
-      <h1>List</h1>
-      {authorsList}
+    <ul className="ml-0">
+      <Search basicAuthors={authorsWithSelectedLang} />
     </ul>
   );
 };
@@ -41,6 +31,9 @@ query {
     edges {
       node {
         frontmatter {
+          birthPlace
+          authorImage
+          birthDate
           name
           path
           lng
@@ -64,13 +57,10 @@ class ListPage extends React.Component {
   }
 
   render() {
-    const { t } = this.props;
     const { authors } = this.state;
     return (
       <Layout>
         <SEO title="Page two" />
-        <Link to="/">{t('home')}</Link>
-        <h1>{t('List of Authors')}</h1>
         <Authors authors={authors} />
       </Layout>
     );
@@ -87,5 +77,4 @@ ListPage.propTypes = {
   data: PropTypes.shape({
     allJavascriptFrontmatter: PropTypes.object,
   }),
-  t: PropTypes.func.isRequired,
 };
