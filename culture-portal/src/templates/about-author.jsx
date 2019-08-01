@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-// import Photo from '../components/image';
 
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
@@ -17,11 +16,6 @@ export default function Template(props) {
     <Layout>
       <div className="blog-post">
         <AutorDescription data={frontmatter} />
-        {/* <h1>{frontmatter.name}</h1> */}
-        {/* <p>{frontmatter.birthDate}</p> */}
-        {/* <p>{frontmatter.description}</p> */}
-        {/* <Photo className="avatar" imgsrc={frontmatter.authorImage} /> */}
-        {/* <p>{frontmatter.science}</p> */}
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine />
       </div>

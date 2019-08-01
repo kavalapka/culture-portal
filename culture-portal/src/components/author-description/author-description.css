@@ -1,23 +1,33 @@
 .author-description_wrapper {
+  display: flex;
   margin: 35px 0;
   font-family: 'Roboto';
   text-align: center;
 }
 
+.author-description_photo {
+  width: 30%;
+}
+
 #author-description_block {
-  flex-direction: row;
+  width: 70%;
   background: none;
   border: none;
 }
 
-#author-description_photo {
-  width: 30%;
-  margin: 0 auto;
-}
-
 @media only screen and (max-width: 600px) {
+  .author-description_wrapper {
+    flex-direction: column;
+  }
+
+  .author-description_photo {
+    margin: auto;
+    width: 60%;
+  }
+
   #author-description_block {
-      flex-direction: column;
+    margin: auto;
+    width: 100%;
   }
 }
 
