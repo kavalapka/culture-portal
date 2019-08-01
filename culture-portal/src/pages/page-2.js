@@ -1,11 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Button } from 'react-bootstrap';
-import Gallery from '../components/gallery/gallery';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
-import TimeLine from '../components/timeLine';
 
 const SecondPage = () => (
   <Layout>
@@ -13,8 +10,6 @@ const SecondPage = () => (
     <h1>Hi from the second page</h1>
     <Button>Welcome to page 2</Button>
     <Link to="/">Go back to the homepage</Link>
-    <TimeLine />
-    <Gallery />
   </Layout>
 );
 

@@ -28,11 +28,7 @@
     "react-helmet": "^5.2.1",
     "react-modal-video": "^1.2.2",
     "react-i18next": "^10.11.4",
-<<<<<<< HEAD
     "react-responsive-carousel": "^3.1.49",
-=======
-    "react-image-show": "^0.3.4",
->>>>>>> origin/master
     "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {

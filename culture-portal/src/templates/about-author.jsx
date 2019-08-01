@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
 import AutorDescription from '../components/author-description';
-
+import Gallery from '../components/gallery/gallery';
 import './about-author.css';
 
 export default function Template(props) {
@@ -18,6 +18,7 @@ export default function Template(props) {
         <AutorDescription data={frontmatter} />
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine />
+        <Gallery data={frontmatter.works} />
       </div>
     </Layout>
   );
@@ -34,6 +35,7 @@ export const pageQuery = graphql`
       authorImage
       youtube
       youtubeStart
+      works
     }
   }
   }

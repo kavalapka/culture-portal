@@ -3,6 +3,7 @@
 	height: 23px;
 	outline: none;
 	background: #A07092;
+	opacity: 0.5;
 }
 
 .carousel .control-dots .dot.selected,
@@ -41,4 +42,31 @@
 	font-size: 44px;
 	line-height: 52px;
 
+}
+
+.main_slider_img {
+	margin: 0;
+}
+
+.carousel .slide .legend {
+	opacity: .8;
+	width: 400px;
+	background: rgba(112, 13, 81, 0.918);
+	font-size: 1.2rem;
+	word-wrap: break-word;
+}
+
+.carousel .slide .legend.slide1 {
+	margin: 0;
+	right: 5%;
+	bottom: 100px;
+}
+
+.carousel .slide .legend.slide2 {
+	right: 0;
+}
+
+.carousel .slide .legend.slide3 {
+	top: 30px;
+	bottom: initial;
 }

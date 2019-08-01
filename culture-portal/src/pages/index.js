@@ -15,12 +15,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-<<<<<<< HEAD
       <MainSlider />
       <br />
       <Link to="/search/">Search</Link>
-=======
->>>>>>> origin/master
       <h1>{t('welcome')}</h1>
       <p>Now go build something great.</p>
       <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }} />
