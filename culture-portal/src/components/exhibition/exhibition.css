@@ -20,6 +20,7 @@
   transition: box-shadow .2s ease;
   overflow: hidden;
   color: white;
+  font-weight: 900;
 }
 
 .exhib__card div.gatsby-image-wrapper {
