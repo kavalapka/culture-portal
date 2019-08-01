@@ -1,5 +1,20 @@
 {
-  "welcome": "Welcome to your new Gatsby site!",
+  "welcome": "Portal about Belarusian photographers",
+  "blockquotes": {
+    "first": {
+      "quote": "«Photography picks up a fact from life, and it will live forever»",
+      "author": "Raghu Rai"
+    },
+    "second": {
+      "quote": "«When you photograph a face...you photograph a soul behind it»",
+      "author": "Jean - Luc Godard "
+    },
+    "third": {
+      "quote": "«Photography is the only language that can be understood anywhere in the world»",
+      "author": "Bruno Barbe"
+    }
+  },
+  "intro": "The photographer is a bright and extraordinary person. A person who knows how to convey the whole spectrum of emotions in photography, making people cry or laugh. Photography is a relatively young art. The first black-and-white photograph was taken in 1822, but it has not been preserved, so many publications take the “View from the window” taken by Joseph Nieps in 1826 as the basis. He was also the author of the unsaved picture. After this event, the photo begins to develop rapidly. Gray and blurry silhouettes turn into crisp black and white pictures. Soon, in 1861, color photography also appeared. These pictures were obtained by color separation. Nowadays, photography has long moved to the digital level. We forgot about the films and can see the quality of the picture by simply pressing a button on the camera. People who devote their lives to the art of capturing are called photographers. This portal is dedicated to outstanding photographers of the Republic of Belarus ",
   "placeholder": "Enter author or city name",
   "find": "Nothing to find",
   "menu": {
@@ -18,8 +33,7 @@
   "our": "Our ",
   "team": "team",
   "timeline": "Biography",
-  "authors": [
-    {
+  "authors": [{
       "id": 1,
       "name": "Dashkevich Lev Urbanovich",
       "science": "Belarusian photographer, publicist, teacher, scientist, inventor",

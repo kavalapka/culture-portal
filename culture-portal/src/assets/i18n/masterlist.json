@@ -1,5 +1,7 @@
 {
   "welcome": "string",
+  "blockquotes": "object",
+  "intro": "string",
   "placeholder": "string",
   "find": "string",
   "menu": {
