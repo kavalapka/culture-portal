@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 
 const SearchDebounce = ({ t, handleChange }) => (
   <DebounceInput
-    minLength={2}
+    minLength={1}
     debounceTimeout={300}
     onChange={event => handleChange(event.target.value)}
     placeholder={t('placeholder')}

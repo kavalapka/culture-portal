@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .authorCard{
-    flex-direction: row;
+    display:block;
     width:100%;
     border: none;
     background-color: transparent;
     font-family: 'Roboto','Arial', sans-serif;
     justify-content: space-between;
-    margin-bottom:4vw;
+    margin-bottom:5rem;
 }
 
 .photoCard{
-    width: 300px;
-    margin-right:4vw;
+    width: 30%;
+    margin-right:5rem;
+    margin-bottom:1.45rem;
 }
 
 .titleCard{
@@ -19,6 +20,8 @@
 }
 
 .buttonCard{
+    display:flex;
+    justify-content:center;
     background-color: #A07092;
     border: none;
     outline: none;

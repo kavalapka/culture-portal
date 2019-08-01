@@ -3,7 +3,6 @@ import { withTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 import i18n from 'i18next';
 import PropTypes from 'prop-types';
-import Link from '../components/Link';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -59,13 +58,10 @@ class ListPage extends React.Component {
   }
 
   render() {
-    const { t } = this.props;
     const { authors } = this.state;
     return (
       <Layout>
         <SEO title="Page two" />
-        <Link to="/">{t('home')}</Link>
-        <h1>{t('List of Authors')}</h1>
         <Authors authors={authors} />
       </Layout>
     );
@@ -82,5 +78,4 @@ ListPage.propTypes = {
   data: PropTypes.shape({
     allJavascriptFrontmatter: PropTypes.object,
   }),
-  t: PropTypes.func.isRequired,
 };
