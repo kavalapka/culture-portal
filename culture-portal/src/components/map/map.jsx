@@ -15,6 +15,7 @@ const Markers = props => {
           <Marker
             key={place.id}
             position={{ lat: place.lat, lng: place.lng }}
+            title={place.title}
           />
         );
       })}

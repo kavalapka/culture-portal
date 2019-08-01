@@ -6,6 +6,7 @@ const places = [
    {
     id:'1',
     title: 'Varshava',
+     name:'Varshava',
     lat: 52.22977,
     lng: 21.01178
   },
