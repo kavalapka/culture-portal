@@ -10,4 +10,7 @@ input{
     margin-bottom:4rem;
     margin-top: 4rem;
     background-color: #A07092;
+    &:hover{
+        background-color: darken($color: #A07092, $amount: 15);
+    }
 }

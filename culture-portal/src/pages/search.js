@@ -33,7 +33,6 @@ query {
         frontmatter {
           birthPlace
           authorImage
-          science
           birthDate
           name
           path

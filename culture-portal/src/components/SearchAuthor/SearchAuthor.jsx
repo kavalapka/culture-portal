@@ -16,7 +16,6 @@ const Author = ({ author, t }) => (
         {author.birthPlace}
 )
       </Card.Text>
-      <Card.Text>{author.science}</Card.Text>
       <Link to={author.path}><Button variant="primary" className="buttonCard">{t('more')}</Button></Link>
     </Card.Body>
   </Card>

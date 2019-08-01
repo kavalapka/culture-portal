@@ -6,21 +6,22 @@ import Author from '../SearchAuthor';
 
 
 const Search = ({ basicAuthors }) => {
+  const compare = (a, b) => {
+    const a1 = a.node.frontmatter.name.toLowerCase().split(' ').join('');
+    const b1 = b.node.frontmatter.name.toLowerCase().split(' ').join('');
+    if (a1 < b1) { return -1; }
+    if (a1 > b1) { return 1; }
+    return 0;
+  };
   const { t } = useTranslation();
-  const [authors, setAuthors] = useState(basicAuthors);
+  const [authors, setAuthors] = useState(basicAuthors.sort(compare));
   const handleChange = (text) => {
     const searchText = text.toLowerCase();
     setAuthors(
       basicAuthors.filter(
         author => author.node.frontmatter.name.toLowerCase().includes(searchText)
         || author.node.frontmatter.birthPlace.toLowerCase().includes(searchText),
-      ).sort((a, b) => {
-        const a1 = a.node.frontmatter.name.toLowerCase().split(' ').join('');
-        const b1 = b.node.frontmatter.name.toLowerCase().split(' ').join('');
-        if (a1 < b1) { return -1; }
-        if (a1 > b1) { return 1; }
-        return 0;
-      }),
+      ).sort(compare),
     );
   };
   return (
