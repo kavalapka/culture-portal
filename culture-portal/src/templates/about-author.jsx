@@ -1,32 +1,33 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Photo from '../components/image';
 
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
+import Exhibition from '../components/exhibition';
+import AutorDescription from '../components/author-description';
+
 import Map from '../components/map';
 import './about-author.css';
 
 export default function Template(props) {
   const { data } = props;
   const { frontmatter } = data.javascriptFrontmatter;
-
   return (
-    <Layout>
-      <div className="blog-post">
-        <Map />
-        <h1>{frontmatter.name}</h1>
-        <p>{frontmatter.birthDate}</p>
-        <p>{frontmatter.description}</p>
-        <Photo className="avatar" imgsrc={frontmatter.authorImage} />
-        <p>{frontmatter.science}</p>
-        <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
-        <TimeLine />
-        <Map />
-      </div>
-    </Layout>
+    <div>
+      <Layout />
+      <main>
+        <div className="blog-post">
+          <AutorDescription data={frontmatter} />
+          <Exhibition exhibitions={frontmatter.exhibitions} />
+          <TimeLine activity={frontmatter.activity} />
+          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
+          <Map />
+        </div>
+      </main>
+      <footer>© Портал белорусских фотографов 2019</footer>
+    </div>
   );
 }
 
@@ -36,10 +37,19 @@ export const pageQuery = graphql`
     frontmatter {
       birthDate
       name
+      death
+      activity{date, description}
+      works
       science
       authorImage
       youtube
       youtubeStart
+      exhibitions {
+        name
+        photo
+        year
+      }
+      works
     }
   }
   }

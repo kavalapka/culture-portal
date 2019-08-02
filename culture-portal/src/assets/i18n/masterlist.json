@@ -1,5 +1,7 @@
 {
   "welcome": "string",
+  "placeholder": "string",
+  "find": "string",
   "menu": {
     "main": "string",
     "search": "string"
@@ -15,6 +17,8 @@
   "our": "string",
   "team": "string",
   "timeline": "string",
+  "Exhibitions": "string",
+  "Open Video": "string",
   "authors": [
     {
       "id": "number",
