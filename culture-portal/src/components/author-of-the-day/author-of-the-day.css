@@ -1,7 +1,6 @@
 #author-of-the-day {
   font-family: 'Roboto';
   margin-bottom: 60px;
-  padding-right: 20px;
 }
 
 #author-of-the-day__title {
@@ -20,17 +19,12 @@
   background-color: transparent;
 }
 
-#author__photo {
+.author__photo {
   border-radius: 5px;
   height: 100%;
-  width: 27%;
-  margin-right: 5rem;
-}
-
-@media (max-width: 767px){
-  #author__photo{
-      display:none;
-  }
+  min-width: 220px;
+  max-width: 220px;
+  margin-bottom: 30px;
 }
 
 /* 
@@ -48,11 +42,28 @@
   padding: 0;
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 50px;
 }
 
 #author__description {
   padding: 0;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+#author__science {
+  max-width: 500px;
+  align-self: center;
+}
+
+@media (max-width: 767px) {
+  #author__block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author__photo {
+    align-self: center;
+  }
 }

@@ -17,6 +17,8 @@
   "our": "string",
   "team": "string",
   "timeline": "string",
+  "Exhibitions": "string",
+  "Open Video": "string",
   "authors": [
     {
       "id": "number",
