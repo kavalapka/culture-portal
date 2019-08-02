@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
 import AutorDescription from '../components/author-description';
-import Gallery from '../components/gallery/gallery';
+import Gallery from '../components/gallery';
 import './about-author.css';
 
 export default function Template(props) {

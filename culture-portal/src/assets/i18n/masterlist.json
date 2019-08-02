@@ -19,6 +19,8 @@
   "our": "string",
   "team": "string",
   "timeline": "string",
+  "gallery": "string",
+  "slider":"object",
   "authors": [
     {
       "id": "number",
