@@ -34,10 +34,18 @@ exports.frontmatter = {
   ],
   family: '',
   death: '24 января 2018',
-  exhibitions: {
-    2012: 'Фотовыставка «Under Ground» у Café Galerie (г.Леверкузен, Германия)',
-    2013: 'Фотовыставка «Under Ground» (г.Торунь, Польша)',
-  },
+  exhibitions: [
+    {
+      year: 2012,
+      name: '«Under Ground» г.Леверкузен, Германия',
+      photo: 'animpadistov_1.jpg',
+    },
+    {
+      year: 2013,
+      name: '«Under Ground» г.Торунь, Польша',
+      photo: 'animpadistov_2.jpg',
+    },
+  ],
   youtube: 'mO-yWp-Npng',
   youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',

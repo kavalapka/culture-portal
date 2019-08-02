@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
+import Exhibition from '../components/exhibition';
 import AutorDescription from '../components/author-description';
 
 import './about-author.css';
@@ -16,6 +17,7 @@ export default function Template(props) {
     <Layout>
       <div className="blog-post">
         <AutorDescription data={frontmatter} />
+        <Exhibition exhibitions={frontmatter.exhibitions} />
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine activity={frontmatter.activity} />
       </div>
@@ -36,6 +38,12 @@ export const pageQuery = graphql`
       authorImage
       youtube
       youtubeStart
+      exhibitions {
+        name
+        photo
+        year
+      }
+      works
     }
   }
   }

@@ -42,14 +42,23 @@ exports.frontmatter = {
   ],
   family: 'In 1908, Lev Dashkevich married Zinaida Knizhnikova. Son Leonard (he was born in 1909)',
   death: 'December 4, 1957',
-  exhibitions: {
-    2002: 'Exhibition “Enchanted by Belarus”',
-    2003: 'The catalog of photos “Lev Urbanovich Dashkevich”, Minsk',
-    2015: 'Exhibition “Light and Shadow. Photos of Lev Dashkevich“ Kazakhstan',
-    2016: 'Exhibition “Light and Shadow. Photos of Lev Dashkevich“ Jerusalem',
-    2017: 'Exhibition “Light and Shadow. Photos of Lev Dashkevich“ Minsk',
-    2018: 'IMF-2017: Exhibition “Belarus is dedicated ...”',
-  },
+  exhibitions: [
+    {
+      year: 1923,
+      name: 'Ethnographic expedition in the Igumen and Logoisk regions',
+      photo: 'dashkevich_3.jpg',
+    },
+    {
+      year: 1957,
+      name: '"Light and shadow. Photos of Lev Dashkevich ”, Minsk',
+      photo: 'dashkevich_4.jpg',
+    },
+    {
+      year: 2016,
+      name: '"Light and shadow. Photos of Lev Dashkevich ”, Jerusalem',
+      photo: 'dashkevich_8.jpg',
+    },
+  ],
   youtube: 'gTpMQjc9k74',
   authorImage: 'dashkevich.jpg',
   works: [

@@ -30,12 +30,23 @@ exports.frontmatter = {
   ],
   family: '',
   death: '4 лютага 1950',
-  exhibitions: {
-    '1931-1936': 'Серыя фотаальбомаў "Wędrówki fotografa"',
-    1934: 'Фотаілюстрацыі да кнігі пра Вільню Ежы Ремера',
-    1935: 'Кніга пра падарожжа з Вільні на оз.Нарочь з 38 фотаздымкамі',
-    1937: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
-  },
+  exhibitions: [
+    {
+      year: 1931,
+      name: 'Серыя фотаальбомаў "Wędrówki fotografa"',
+      photo: 'bulgak_1.jpg',
+    },
+    {
+      year: 1935,
+      name: 'Кніга пра падарожжа з Вільні на оз.Нарочь',
+      photo: 'bulgak_3.jpg',
+    },
+    {
+      year: 1937,
+      name: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
+      photo: 'bulgak_4.jpg',
+    },
+  ],
   youtube: 'Ato3OAWjdDA',
   authorImage: 'bulgak.jpg',
   works: [

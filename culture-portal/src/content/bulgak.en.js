@@ -34,12 +34,23 @@ exports.frontmatter = {
   ],
   family: '',
   death: 'February 4, 1950',
-  exhibitions: {
-    '1931-1936': 'Series of photo albums "Wędrówki fotografa"',
-    1934: 'Photo illustrations for the book about Vilna Jerzy Remer',
-    1935: 'Book about the journey from Vilna to Lake Naroche with 38 photographs',
-    1937: 'Photo illustrations for the city guide of Julius Clos',
-  },
+  exhibitions: [
+    {
+      year: 1931,
+      name: 'Series of photo albums "Wędrówki fotografa"',
+      photo: 'bulgak_1.jpg',
+    },
+    {
+      year: 1935,
+      name: 'Book about the journey from Vilna to Lake Naroche',
+      photo: 'bulgak_3.jpg',
+    },
+    {
+      year: 1937,
+      name: 'Photo illustrations for the city guide of Julius Clos',
+      photo: 'bulgak_4.jpg',
+    },
+  ],
   youtube: 'Ato3OAWjdDA',
   authorImage: 'bulgak.jpg',
   works: [
