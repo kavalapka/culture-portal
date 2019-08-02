@@ -30,7 +30,6 @@ exports.frontmatter = {
       photo: 'dashkevich_2.jpg',
     },
     {
-      date: 1920,
       name: 'Выставка 3',
       photo: 'dashkevich_3.jpg',
     },

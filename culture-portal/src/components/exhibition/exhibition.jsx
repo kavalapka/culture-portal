@@ -22,34 +22,16 @@ const Exhibition = ({ exhibitions }) => {
             <Card.Header>
               <Photo imgsrc={exh.photo} />
             </Card.Header>
-            <Card.ImgOverlay className="exhib__overlay">
+            <Card.Body className="exhib__desc">
               <Card.Title>{exh.name}</Card.Title>
               <Card.Text>{exh.date}</Card.Text>
-            </Card.ImgOverlay>
+            </Card.Body>
           </Card>
         ))
       }
       </div>
     </div>
   );
-  // return (
-  //   <section className="our-team">
-  //     <h3>
-  //       Exhibitions
-  //     </h3>
-  //     <div className="our-team__list">
-  //       {exhibitions.length > 0 && exhibitions.map(item => (
-  //         <Card className="our-team__item" key={uniqueId()}>
-  //           <Card.Header>
-  //             <Photo imgsrc={item.photo} />
-  //           </Card.Header>
-  //           <Card.Title style={{ fontSize: '.8em' }}>{item.name}</Card.Title>
-  //           <Card.Subtitle style={{ fontSize: '.7em' }}>{item.date}</Card.Subtitle>
-  //         </Card>
-  //       ))}
-  //     </div>
-  //   </section>
-  // );
 };
 
 export default Exhibition;
