@@ -14,7 +14,10 @@
   background: none;
   border: none;
 }
-
+.cardBody{
+  text-align:left;
+  margin-left:5rem;
+}
 @media only screen and (max-width: 600px) {
   .author-description_wrapper {
     flex-direction: column;

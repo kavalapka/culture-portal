@@ -6,19 +6,42 @@ exports.frontmatter = {
   birthDate: 'March 16, 1964',
   birthPlace: 'Minsk',
   education: '1979-1983 graduated from Minsk Art college (now - Minsk State art college named after A.K. Glebov)',
-  activity: {
-    'March 1987': 'From March 1987 he was a member of the art-laboratory "Vetka" (informal artistic association) in Minsk',
-    '1989-1994': 'In 1989-1994 worked as art editor in the Belarusian newspaper "Birch"',
-    1997: 'Since 1997, he had been a member of the Belarusian Union of Designers',
-    '2007-2008': 'He was a designer of famous logos - including the Belarusian logo social and cultural company "Let\'s be Belarusians!" Belarusian rock festival "Basovshchina-2007" і "Basovshchina-2008" and others. He created a series of animated cards “We\'re celebrating Belarusian holidays”, and other series',
-    2011: 'In 2011 - presented the photo exhibition "Under Ground", became a board member of the Belarusian Union of Designers',
-  },
+  activity: [
+    {
+      date: '1987',
+      description: 'From March 1987 he was a member of the art-laboratory "Vetka" (informal artistic association) in Minsk',
+    },
+    {
+      date: '1989-1994',
+      description: 'In 1989-1994 worked as art editor in the Belarusian newspaper "Birch"',
+    },
+    {
+      date: '1997',
+      description: 'Since 1997, he had been a member of the Belarusian Union of Designers',
+    },
+    {
+      date: '2007-2008',
+      description: 'He was a designer of famous logos - including the Belarusian logo social and cultural company "Let\'s be Belarusians!" Belarusian rock festival "Basovshchina-2007" і "Basovshchina-2008" and others. He created a series of animated cards “We\'re celebrating Belarusian holidays”, and other series',
+    },
+    {
+      date: '2011',
+      description: 'In 2011 - presented the photo exhibition "Under Ground", became a board member of the Belarusian Union of Designers',
+    },
+  ],
   family: '',
-  death: 'Died January 24, 2018 In Minsk as a result of stroke',
-  exhibitions: {
-    2012: 'Photo exhibition "Under Ground" at the Café Galerie (Leverkusen, Germany)',
-    2013: 'Photo exhibition "Under Ground" (Torun, Poland)',
-  },
+  death: 'January 24, 2018',
+  exhibitions: [
+    {
+      year: 2012,
+      name: '«Under Ground» Leverkusen, Germany',
+      photo: 'animpadistov_1.jpg',
+    },
+    {
+      year: 2013,
+      name: '«Under Ground» Torun, Poland',
+      photo: 'animpadistov_2.jpg',
+    },
+  ],
   youtube: 'mO-yWp-Npng',
   youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',

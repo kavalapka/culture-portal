@@ -21,6 +21,8 @@
   "timeline": "string",
   "gallery": "string",
   "slider":"object",
+  "Exhibitions": "string",
+  "Open Video": "string",
   "authors": [
     {
       "id": "number",

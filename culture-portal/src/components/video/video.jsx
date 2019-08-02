@@ -1,6 +1,7 @@
 import React from 'react';
 import ModalVideo from 'react-modal-video';
 import { Button } from 'react-bootstrap';
+import { withTranslation } from 'react-i18next';
 import './video.css';
 
 
@@ -18,6 +19,7 @@ class Video extends React.Component {
   }
 
   render() {
+    const { t } = this.props;
     const { isOpen } = this.state;
     const { youtubeId, start } = this.props;
     const options = {
@@ -35,10 +37,10 @@ class Video extends React.Component {
           color="white"
           onClose={() => this.setState({ isOpen: false })}
         />
-        <Button variant="light" size="lg" className="video-button" role="button" onClick={this.openModal}>Open Video</Button>
+        <Button variant="primary" onClick={this.openModal}>{t('Open Video')}</Button>
       </div>
     );
   }
 }
 
-export default Video;
+export default withTranslation()(Video);

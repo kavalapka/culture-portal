@@ -33,12 +33,15 @@
   "our": "Наша ",
   "team": "команда",
   "timeline": "Биография",
+  "Exhibitions": "Выставки",
+  "Open Video": "Открыть Видео",
   "gallery": "Фотогалерея",
   "slider": ["https://images.wallpaperscraft.ru/image/fotoapparat_obektiv_optika_141755_1920x1200.jpg",
     "https://images.wallpaperscraft.ru/image/fotoapparat_obektiv_sumka_139250_1920x1200.jpg",
     "https://www.vladtime.ru/uploads/posts/2018-02/1518885831_fuji-x100t-digital-camera_1920x1200_wallpaper.jpg"
   ],
-  "authors": [{
+  "authors": [
+    {
       "id": 1,
       "name": "Дашкевич Лев Урбанович",
       "science": "Белорусский фотограф, публицист, педагог, ученый, изобретатель",
