@@ -1,7 +1,7 @@
 exports.frontmatter = {
   path: '/bulgak',
   lng: 'by',
-  name: 'Ян Бу́лгак',
+  name: 'Булгак Ян',
   science: 'Беларускі фатограф, заснавальнік і старшыня Віленскага фотаклуба, рэдактар часопісаў  „Przegląd Fotograficzny“, „Fotograf Polski“',
   birthDate: '6 кастрычніка 1876',
   birthPlace: 'Асташына пад Навагрудкам',
@@ -29,7 +29,7 @@ exports.frontmatter = {
     },
   ],
   family: '',
-  death: '4 лютага 1950г. Пахаваны у г.Варшаве на  могілках Старыя Повонзкі',
+  death: '4 лютага 1950',
   exhibitions: {
     '1931-1936': 'Серыя фотаальбомаў "Wędrówki fotografa"',
     1934: 'Фотаілюстрацыі да кнігі пра Вільню Ежы Ремера',

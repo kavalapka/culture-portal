@@ -8,13 +8,14 @@ const AutorDescription = (props) => {
     name, birthDate, death, science, authorImage,
   } = data;
   const yearsLife = !death.length ? birthDate : `${birthDate} - ${death}`;
+
   return (
     <section className="author-description_wrapper">
       <Photo className="author-description_photo" imgsrc={authorImage} alt="author photo" />
       <Card id="author-description_block">
         <Card.Body>
           <Card.Title id="author-description_title">{name}</Card.Title>
-          <Card.Text style={{ marginBottom: '0' }}>{yearsLife}</Card.Text>
+          <Card.Text style={{ marginBottom: '0' }}>{`( ${yearsLife} )`}</Card.Text>
           <Card.Text>{science}</Card.Text>
         </Card.Body>
       </Card>

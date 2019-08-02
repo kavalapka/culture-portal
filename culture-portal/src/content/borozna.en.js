@@ -3,8 +3,8 @@ exports.frontmatter = {
   lng: 'en',
   name: 'Borozna Mikhail Grigorievich',
   science: 'Belarusian art historian, art critic, photo artist. Ph.D. in History of Arts (1998). Rector of the Belarusian State Academy of Arts. Honorary Member of the Russian Academy of Arts',
-  birthDate: 'November 20, 1962 (56 years old)',
-  birthPlace: 'Rakushevo, Kruglyansky village council, Kruglyansky district, Mogilev region, BSSR, USSR',
+  birthDate: 'November 20, 1962',
+  birthPlace: 'Rakushevo',
   education: 'He graduated from Kruglyanskaya high school. In 1985 he graduated from the art-industrial faculty of the Belarusian State Academy of Arts',
   activity: [
     {

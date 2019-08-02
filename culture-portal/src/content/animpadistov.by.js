@@ -33,7 +33,7 @@ exports.frontmatter = {
     },
   ],
   family: '',
-  death: 'Памёр 24 студзеня 2018 г. у Мінску ад інсульту',
+  death: '24 студзеня 2018',
   exhibitions: {
     2012: 'Фотавыстаўка «Under Ground» у Café Galerie (г.Леверкузен, Германія)',
     2013: 'Фотавыстаўка «Under Ground» (г.Торунь, Польшча)',

@@ -1,7 +1,7 @@
 exports.frontmatter = {
   path: '/bulgak',
   lng: 'en',
-  name: 'Jan Bulgak',
+  name: 'Bulgak Jan',
   science: 'Belarusian  photographer,he founders and chairman of the Vilna Photo Club, the editor of the magazines "Przegląd Fotograficzny", "Fotograf Polski"',
   birthDate: 'October 6, 1876',
   birthPlace: 'Ostashino near Novogrudok',
@@ -33,7 +33,7 @@ exports.frontmatter = {
     },
   ],
   family: '',
-  death: 'February 4, 1950. Buried in the city of Warsaw at the Old cemetery Powezki',
+  death: 'February 4, 1950',
   exhibitions: {
     '1931-1936': 'Series of photo albums "Wędrówki fotografa"',
     1934: 'Photo illustrations for the book about Vilna Jerzy Remer',

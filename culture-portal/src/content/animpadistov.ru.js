@@ -33,7 +33,7 @@ exports.frontmatter = {
     },
   ],
   family: '',
-  death: 'Умер 24 января 2018 г. в Минске от инсульта',
+  death: '24 января 2018',
   exhibitions: {
     2012: 'Фотовыставка «Under Ground» у Café Galerie (г.Леверкузен, Германия)',
     2013: 'Фотовыставка «Under Ground» (г.Торунь, Польша)',
