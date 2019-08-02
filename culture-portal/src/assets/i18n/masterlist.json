@@ -1,5 +1,7 @@
 {
   "welcome": "string",
+  "placeholder": "string",
+  "find": "string",
   "menu": {
     "main": "string",
     "search": "string"

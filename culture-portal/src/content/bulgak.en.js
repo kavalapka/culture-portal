@@ -16,12 +16,34 @@ exports.frontmatter = {
   },
   family: '',
   death: 'February 4, 1950. Buried in the city of Warsaw at the Old cemetery Powezki',
-  exhibitions: {
-    '1931-1936': 'Series of photo albums "Wędrówki fotografa"',
-    1934: 'Photo illustrations for the book about Vilna Jerzy Remer',
-    1935: 'Book about the journey from Vilna to Lake Naroche with 38 photographs',
-    1937: 'Photo illustrations for the city guide of Julius Clos',
-  },
+  exhibitions: [
+    {
+      year: 1931,
+      name: 'Серыя фотаальбомаў "Wędrówki fotografa"',
+      photo: 'bulgak_1.jpg',
+    },
+    {
+      year: 1934,
+      name: 'Фотаілюстрацыі да кнігі пра Вільню Ежы Ремера',
+      photo: 'bulgak_2.jpg',
+    },
+    {
+      year: 1935,
+      name: 'Кніга пра падарожжа з Вільні на оз.Нарочь з 38 фотаздымкамі',
+      photo: 'bulgak_3.jpg',
+    },
+    {
+      year: 1937,
+      name: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
+      photo: 'bulgak_4.jpg',
+    },
+  ],
+  // exhibitions: {
+  //   '1931-1936': 'Series of photo albums "Wędrówki fotografa"',
+  //   1934: 'Photo illustrations for the book about Vilna Jerzy Remer',
+  //   1935: 'Book about the journey from Vilna to Lake Naroche with 38 photographs',
+  //   1937: 'Photo illustrations for the city guide of Julius Clos',
+  // },
   youtube: 'Ato3OAWjdDA',
   authorImage: 'bulgak.jpg',
   works: [

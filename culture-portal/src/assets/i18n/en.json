@@ -1,5 +1,7 @@
 {
   "welcome": "Welcome to your new Gatsby site!",
+  "placeholder": "Enter author or city name",
+  "find": "Nothing to find",
   "menu": {
     "main": "Home",
     "search": "Search"

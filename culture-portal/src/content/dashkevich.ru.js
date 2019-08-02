@@ -20,14 +20,24 @@ exports.frontmatter = {
   death: '4 декабря 1957 похоронен на старом Кальварийском кладбищ в Минске. Умер от той болезни, диагностика которой так его занимала — рака легких',
   exhibitions: [
     {
-      date: 1920,
-      name: 'Выставка 1',
-      photo: 'dashkevich_1.jpg',
+      year: 1920,
+      name: 'Серыя фотаальбомаў "Wędrówki fotografa"',
+      photo: 'dashkevich_9.jpg',
     },
     {
-      date: 1921,
-      name: 'Выставка 2',
+      year: 1921,
+      name: 'Фотаілюстрацыі да кнігі пра Вільню Ежы Ремера',
       photo: 'dashkevich_2.jpg',
+    },
+    {
+      year: 1925,
+      name: 'Кніга пра падарожжа з Вільні на оз.Нарочь з 38 фотаздымкамі',
+      photo: 'dashkevich_3.jpg',
+    },
+    {
+      year: 1926,
+      name: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
+      photo: 'dashkevich_4.jpg',
     },
   ],
   youtube: 'gTpMQjc9k74',

@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'content_copy',
-        path: `${__dirname}/src/components/content_copy`,
+        name: 'content',
+        path: `${__dirname}/src/content`,
       },
     },
     'gatsby-transformer-javascript-frontmatter',

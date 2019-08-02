@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
-  background: linear-gradient(180deg, #A07092 0%, #FFFFFF 46.35%, #A89CA4 100%), #FFFFFF;
   font-size: 18px;
 }
 #author-of-the-day {

@@ -16,10 +16,22 @@ exports.frontmatter = {
   },
   family: '',
   death: 'Умер 24 января 2018 г. в Минске от инсульта',
-  exhibitions: {
-    2012: 'Фотовыставка «Under Ground» у Café Galerie (г.Леверкузен, Германия)',
-    2013: 'Фотовыставка «Under Ground» (г.Торунь, Польша)',
-  },
+  exhibitions: [
+    {
+      year: 2012,
+      name: '«Under Ground» г.Леверкузен, Германія',
+      photo: 'animpadistov_1.jpg',
+    },
+    {
+      year: 2013,
+      name: '«Under Ground» г.Торунь, Польшча',
+      photo: 'animpadistov_2.jpg',
+    },
+  ],
+  // exhibitions: {
+  //   2012: 'Фотовыставка «Under Ground» у Café Galerie (г.Леверкузен, Германия)',
+  //   2013: 'Фотовыставка «Under Ground» (г.Торунь, Польша)',
+  // },
   youtube: 'mO-yWp-Npng',
   youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',

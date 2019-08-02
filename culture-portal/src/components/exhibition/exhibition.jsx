@@ -20,7 +20,7 @@ const Exhibition = ({ exhibitions }) => {
             </Card.Header>
             <Card.Body className="exhib__desc">
               <Card.Title>{exh.name}</Card.Title>
-              <Card.Text>{exh.date}</Card.Text>
+              <Card.Text>{exh.year}</Card.Text>
             </Card.Body>
           </Card>
         ))
