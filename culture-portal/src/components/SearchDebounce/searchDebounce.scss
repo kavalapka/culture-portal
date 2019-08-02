@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 input{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #666;
     outline:none;
-    font-family: 'Roboto','Arial', sans-serif;
     color:#fff;
     margin-bottom:4rem;
     margin-top: 4rem;
-    background-color: #A07092;
     &:hover{
-        background-color: darken($color: #A07092, $amount: 15);
+        background-color: #40589A;
+        &::placeholder{
+            color:#fff;
+        }
+    }
+    &::placeholder{
+        color:#000;
     }
 }

@@ -24,21 +24,3 @@
 .titleCard{
     font-weight:bold;
 }
-
-.buttonCard{
-    background-color: #A07092;
-    border: none;
-    outline: none;
-    margin: 0 auto;
-    padding: 8px 35px;
-    font-weight: bold;
-    border-radius:5px;
-    & a{
-        color:#fff;
-        text-decoration: none;
-    }
-    &:hover{
-        background-color: darken($color: #A07092, $amount: 15);
-    }
-
-}

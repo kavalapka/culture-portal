@@ -5,17 +5,4 @@
   justify-content: center;
 }
 
-.video-button {
-  width: 250px;
-  border: none;
-  color: #FFFFFF;
-  font-weight: bold;
-  background-color: #584c54;
-}
-
-.video-button:hover {
-  color: #c1b5bd;
-  background-color: #43383f;
-}
-
 

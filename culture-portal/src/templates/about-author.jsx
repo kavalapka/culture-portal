@@ -14,14 +14,18 @@ export default function Template(props) {
   const { data } = props;
   const { frontmatter } = data.javascriptFrontmatter;
   return (
-    <Layout>
-      <div className="blog-post">
-        <AutorDescription data={frontmatter} />
-        <Exhibition exhibitions={frontmatter.exhibitions} />
-        <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
-        <TimeLine activity={frontmatter.activity} />
-      </div>
-    </Layout>
+    <div>
+      <Layout />
+      <main>
+        <div className="blog-post">
+          <AutorDescription data={frontmatter} />
+          <Exhibition exhibitions={frontmatter.exhibitions} />
+          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
+          <TimeLine activity={frontmatter.activity} />
+        </div>
+      </main>
+      <footer>© Портал белорусских фотографов 2019</footer>
+    </div>
   );
 }
 
