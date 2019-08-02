@@ -17,7 +17,7 @@ exports.frontmatter = {
     '1941-1944': 'In 1941-1944 he lived in an evacuation in Frunze (now Bishkek, Kyrgyzstan), worked in medical institutions. In September 1944 he returned to Minsk. He worked at the Institute of Theoretical Medicine and the Institute of Physiology',
   },
   family: 'In 1908, Lev Dashkevich married Zinaida Knizhnikova. Son Leonard (he was born in 1909)',
-  death: 'Died December 4, 1957',
+  death: 'December 4, 1957',
   exhibitions: [
     {
       year: 1923,
@@ -28,6 +28,11 @@ exports.frontmatter = {
       year: 1957,
       name: '"Light and shadow. Photos of Lev Dashkevich ”, Minsk',
       photo: 'dashkevich_4.jpg',
+    },
+    {
+      year: 2016,
+      name: '"Light and shadow. Photos of Lev Dashkevich ”, Jerusalem',
+      photo: 'dashkevich_8.jpg',
     },
   ],
   youtube: 'gTpMQjc9k74',

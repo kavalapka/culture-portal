@@ -14,7 +14,7 @@ exports.frontmatter = {
     2011: 'In 2011 - presented the photo exhibition "Under Ground", became a board member of the Belarusian Union of Designers',
   },
   family: '',
-  death: 'Died January 24, 2018 In Minsk as a result of stroke',
+  death: 'January 24, 2018',
   exhibitions: [
     {
       year: 2012,
