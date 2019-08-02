@@ -28,8 +28,8 @@ const AuthorOfTheDay = (props) => {
         <Photo className="author__photo" imgsrc={author.authorImage} />
         <Card.Body id="author__description">
           <Card.Title id="author__title">{author.name}</Card.Title>
-          <Card.Text>{`( ${yearsLife} )`}</Card.Text>
-          <Card.Text>{author.science}</Card.Text>
+          <Card.Text style={{ marginBottom: '0' }}>{`( ${yearsLife} )`}</Card.Text>
+          <Card.Text id="author__science">{author.science}</Card.Text>
           <Link to={author.path} id="author__link">
             <Button id="author__button" variant="primary">
               {t('more')}
