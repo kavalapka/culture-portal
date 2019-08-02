@@ -6,7 +6,7 @@ import Photo from '../components/image';
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
 import Video from '../components/video';
-import GoogleMap from '../components/map'
+import Map from '../components/map';
 import './about-author.css';
 
 export default function Template(props) {
@@ -16,6 +16,7 @@ export default function Template(props) {
   return (
     <Layout>
       <div className="blog-post">
+        <Map />
         <h1>{frontmatter.name}</h1>
         <p>{frontmatter.birthDate}</p>
         <p>{frontmatter.description}</p>
@@ -23,7 +24,7 @@ export default function Template(props) {
         <p>{frontmatter.science}</p>
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
         <TimeLine />
-        <GoogleMap/>
+        <Map />
       </div>
     </Layout>
   );
