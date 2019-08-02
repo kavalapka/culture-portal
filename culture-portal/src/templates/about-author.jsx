@@ -17,7 +17,7 @@ export default function Template(props) {
       <div className="blog-post">
         <AutorDescription data={frontmatter} />
         <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
-        <TimeLine />
+        <TimeLine activity={frontmatter.activity} />
       </div>
     </Layout>
   );
@@ -30,6 +30,8 @@ export const pageQuery = graphql`
       birthDate
       name
       death
+      activity{date, description}
+      works
       science
       authorImage
       youtube
