@@ -3,19 +3,17 @@ import { uniqueId } from 'lodash';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { useTranslation } from 'react-i18next';
 
-const TimeLine = () => {
-  const id = 0;
+const TimeLine = (props) => {
   const { t } = useTranslation();
-  const activity = t(`authors.${id}.activity`, { returnObjects: true });
-  const result = Object.keys(activity).map(key => [key, activity[key]]).sort();
+  const { activity } = props;
   return (
     <div className="timeline_wrapper">
       <h3 className="timeline_title">{t('timeline')}</h3>
       <Timeline lineColor="#38292F">
-        {result.map(el => (
+        {activity.map(el => (
           <TimelineItem
             key={uniqueId()}
-            dateText={el[0]}
+            dateText={el.date}
             dateInnerStyle={{
               background: '#38292F',
               color: '#FFF',
@@ -25,7 +23,7 @@ const TimeLine = () => {
               color: '#000',
             }}
           >
-            {el[1]}
+            {el.description}
           </TimelineItem>
         ))}
       </Timeline>
