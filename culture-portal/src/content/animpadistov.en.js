@@ -18,19 +18,15 @@ exports.frontmatter = {
   exhibitions: [
     {
       year: 2012,
-      name: '«Under Ground» г.Леверкузен, Германія',
+      name: '«Under Ground» Leverkusen, Germany',
       photo: 'animpadistov_1.jpg',
     },
     {
       year: 2013,
-      name: '«Under Ground» г.Торунь, Польшча',
+      name: '«Under Ground» Torun, Poland',
       photo: 'animpadistov_2.jpg',
     },
   ],
-  // exhibitions: {
-  //   2012: 'Photo exhibition "Under Ground" at the Café Galerie (Leverkusen, Germany)',
-  //   2013: 'Photo exhibition "Under Ground" (Torun, Poland)',
-  // },
   youtube: 'mO-yWp-Npng',
   youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',

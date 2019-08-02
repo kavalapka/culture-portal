@@ -20,35 +20,16 @@ exports.frontmatter = {
   death: 'Died December 4, 1957',
   exhibitions: [
     {
-      year: 1920,
-      name: 'Серыя фотаальбомаў "Wędrówki fotografa"',
-      photo: 'dashkevich_9.jpg',
-    },
-    {
-      year: 1921,
-      name: 'Фотаілюстрацыі да кнігі пра Вільню Ежы Ремера',
-      photo: 'dashkevich_2.jpg',
-    },
-    {
-      year: 1925,
-      name: 'Кніга пра падарожжа з Вільні на оз.Нарочь з 38 фотаздымкамі',
+      year: 1923,
+      name: 'Ethnographic expedition in the Igumen and Logoisk regions',
       photo: 'dashkevich_3.jpg',
     },
     {
-      year: 1926,
-      name: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
+      year: 1957,
+      name: '"Light and shadow. Photos of Lev Dashkevich ”, Minsk',
       photo: 'dashkevich_4.jpg',
     },
   ],
-  // exhibitions: {
-  //   1920: 'Exhibition 1',
-  //   1921: 'Exhibition 2',
-  //   1922: 'Exhibition 3',
-  //   1923: 'Exhibition 4',
-  //   1924: 'Exhibition 5',
-  //   1925: 'Exhibition 6',
-  //   1926: 'Exhibition 7',
-  // },
   youtube: 'gTpMQjc9k74',
   authorImage: 'dashkevich.jpg',
   works: [

@@ -28,11 +28,6 @@ exports.frontmatter = {
       photo: 'animpadistov_2.jpg',
     },
   ],
-
-  //   {
-  //   2012: 'Фотавыстаўка «Under Ground» у Café Galerie (г.Леверкузен, Германія)',
-  //   2013: 'Фотавыстаўка «Under Ground» (г.Торунь, Польшча)',
-  // },
   youtube: 'mO-yWp-Npng',
   youtubeStart: 1377,
   authorImage: 'animpadistov.jpg',

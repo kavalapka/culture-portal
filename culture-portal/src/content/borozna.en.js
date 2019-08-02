@@ -20,32 +20,32 @@ exports.frontmatter = {
   exhibitions: [
     {
       year: 1995,
-      name: '«АРТУНОДИСКУС»',
-      photo: 'borozna_1.jpg',
+      name: '«АРТУНОДИСКУС» Vitebsk',
+      photo: 'borozna_7.jpg',
     },
     {
       year: 2000,
-      name: '«Белы іней» ',
+      name: '«Белы іней» Minsk',
       photo: 'borozna_2.jpg',
     },
     {
       year: 2004,
-      name: '«Bunker church-gallery»',
+      name: '«Bunker church-gallery» Dusseldorf',
       photo: 'borozna_3.jpg',
     },
     {
       year: 2008,
-      name: '«Індустрыя святла»',
+      name: '«Індустрыя святла» Minsk',
       photo: 'borozna_4.jpg',
     },
     {
       year: 2009,
-      name: '«Ctrl + Art»',
+      name: '«Ctrl + Art» Minsk',
       photo: 'borozna_5.jpg',
     },
     {
       year: 2011,
-      name: '«Беларускі нацюрморт»',
+      name: '«Беларускі нацюрморт» Minsk',
       photo: 'borozna_6.jpg',
     },
   ],
