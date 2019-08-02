@@ -5,16 +5,12 @@ import Card from 'react-bootstrap/Card';
 import { uniqueId } from 'lodash';
 import Photo from '../image';
 
-import gitIcon from '../footer/git.svg';
-
 
 const Exhibition = ({ exhibitions }) => {
   const { t } = useTranslation();
-  console.log('exhibitions: ', exhibitions[0].name);
-
   return (
     <div>
-      <h1>Exhibitions</h1>
+      <h1>{t('Exhibitions')}</h1>
       <div className="exhib__group">
         {
         exhibitions.map(exh => (

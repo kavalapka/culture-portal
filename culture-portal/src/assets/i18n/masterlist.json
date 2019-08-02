@@ -15,6 +15,7 @@
   "our": "string",
   "team": "string",
   "timeline": "string",
+  "Exhibitions": "string",
   "authors": [
     {
       "id": "number",
