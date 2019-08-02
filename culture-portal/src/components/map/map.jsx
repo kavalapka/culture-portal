@@ -34,15 +34,15 @@ const MapComponent = withScriptjs(withGoogleMap(props => (
   <GoogleMap defaultZoom={props.zoom} defaultCenter={props.center}>
     {props.places.map(place => (
       <Marker
-        key={place.id}
+        key={place.name}
         position={{ lat: place.lat, lng: place.lng }}
-        title={place.title}
+        title={place.name}
       />
     ))}
   </GoogleMap>
 )));
 
-const Map = () => (
+const Map = ({locations}) => (
   <MapComponent
     className="map"
     googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKM45AYokEwz1P5vHnwYGRKhlN_wz8e2A"
@@ -54,7 +54,7 @@ const Map = () => (
       lng: 23.1643,
     }}
     zoom={7}
-    places={places}
+    places={locations}
   />
 );
 export default Map;

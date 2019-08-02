@@ -14,6 +14,8 @@ import './about-author.css';
 export default function Template(props) {
   const { data } = props;
   const { frontmatter } = data.javascriptFrontmatter;
+  const locations = [frontmatter.birthPlaceLocation];
+  frontmatter.exhibitions.forEach(exh => locations.push(exh.location));
   return (
     <div>
       <Layout />
@@ -23,7 +25,7 @@ export default function Template(props) {
           <Exhibition exhibitions={frontmatter.exhibitions} />
           <TimeLine activity={frontmatter.activity} />
           <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
-          <Map />
+          <Map locations={locations} />
         </div>
       </main>
       <footer>© Портал белорусских фотографов 2019</footer>
@@ -36,6 +38,7 @@ export const pageQuery = graphql`
     javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
     frontmatter {
       birthDate
+      birthPlaceLocation { name, lat, lng}
       name
       death
       activity{date, description}
@@ -48,6 +51,7 @@ export const pageQuery = graphql`
         name
         photo
         year
+        location {name, lat, lng}
       }
       works
     }
