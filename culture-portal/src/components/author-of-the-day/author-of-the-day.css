@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-body {
-  font-size: 18px;
-}
 #author-of-the-day {
   font-family: 'Roboto';
   margin-bottom: 60px;
@@ -12,11 +8,10 @@ body {
   font-family: 'Roboto';
   font-weight: bold;
   margin-bottom: 30px;
-  font-size: 28px;
 }
 
 #author-of-the-day__title span {
-  color: #A07092;
+  color: #40589A;
 }
 
 #author__block {
@@ -29,28 +24,24 @@ body {
   border-radius: 5px;
   height: 100%;
   width: 27%;
-  margin-right: 30px;
+  margin-right: 5rem;
 }
 
-#author__button {
-  background-color: #A07092;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Roboto';
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 8px 35px;
+@media (max-width: 767px){
+  #author__photo{
+      display:none;
+  }
 }
 
+/* 
 #author__link {
   text-decoration: none;
   color: #ffffff;
-}
+} */
 
-#author__button:hover #author__link {
+/* #author__button:hover #author__link {
   color: #000000;
-}
+} */
 
 #author__title {
   margin: 0;

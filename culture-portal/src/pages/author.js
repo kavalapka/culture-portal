@@ -8,13 +8,16 @@ import SEO from '../components/seo';
 import TimeLine from '../components/timeLine';
 
 const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <Button>Welcome to page 2</Button>
-    <Link to="/">Go back to the homepage</Link>
-    <TimeLine />
-  </Layout>
+  <div>
+    <Layout />
+    <main>
+      <SEO title="Page two" />
+      <h1>Hi from the second page</h1>
+      <Button>Welcome to page 2</Button>
+      <Link to="/">Go back to the homepage</Link>
+      <TimeLine />
+    </main>
+  </div>
 );
 
 export default SecondPage;

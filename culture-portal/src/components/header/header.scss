@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-header, .dropdown-menu {
-    box-shadow: 0 20px 27px -18px rgba(160, 112, 146, 0.2);
-    font-family: 'Roboto','Arial', sans-serif;
-    background-color:#fff;
-  }
-  .navbar{
+.navbar{
     padding:0;
   }
    .navbar-nav{
@@ -21,11 +15,13 @@ header, .dropdown-menu {
     display:flex;
   }
    .navbar-brand img{
+    width: 90px;
+    height: 90px;
     margin-bottom:0;
-    margin-right:2.5vw;
+    margin-right:8vw;
   }
   .nav-item:not(:last-child){
-    margin-right: 2vw;
+    margin-right: 5vw;
   }
   .nav-item, a.menuLink{
     font-size: 1.2rem;
@@ -36,14 +32,14 @@ header, .dropdown-menu {
     padding-right:10px;
     outline:none;
     width:fit-content;
-    color:#666;
+    color:#000;
     border: none;
     -webkit-appearance: none;
     appearance: none;
     outline:none;
     cursor:pointer;
     & a:hover{
-      color:#A07092;
+      color:#D4D0C3;
       text-decoration: none;
     }
   }

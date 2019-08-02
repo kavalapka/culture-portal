@@ -12,17 +12,21 @@ import '../components/translate/i18n';
 const IndexPage = () => {
   const { t } = useTranslation();
   return (
-    <Layout>
-      <SEO title="Home" />
-      <h1>{t('welcome')}</h1>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }} />
-      <Link to="/author/">Go to Author Page</Link>
-      <br />
-      <Link to="/page-2/">Go to page 2</Link>
-      <AuthorOfTheDay />
-      <Footer />
-    </Layout>
+    <div>
+      <section className="background"><Layout /></section>
+      <main>
+        <SEO title="Home" />
+        <h1>{t('welcome')}</h1>
+        <p>Now go build something great.</p>
+        <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }} />
+        <Link to="/author/">Go to Author Page</Link>
+        <br />
+        <Link to="/page-2/">Go to page 2</Link>
+        <AuthorOfTheDay />
+        <Footer />
+      </main>
+      <footer>© Портал белорусских фотографов 2019</footer>
+    </div>
   );
 };
 

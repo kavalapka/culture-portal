@@ -13,13 +13,17 @@ export default function Template(props) {
   const { data } = props;
   const { frontmatter } = data.javascriptFrontmatter;
   return (
-    <Layout>
-      <div className="blog-post">
-        <AutorDescription data={frontmatter} />
-        <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
-        <TimeLine />
-      </div>
-    </Layout>
+    <div>
+      <Layout />
+      <main>
+        <div className="blog-post">
+          <AutorDescription data={frontmatter} />
+          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
+          <TimeLine />
+        </div>
+      </main>
+      <footer>© Портал белорусских фотографов 2019</footer>
+    </div>
   );
 }
 

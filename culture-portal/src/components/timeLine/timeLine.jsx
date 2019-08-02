@@ -11,13 +11,13 @@ const TimeLine = () => {
   return (
     <div className="timeline_wrapper">
       <h3 className="timeline_title">{t('timeline')}</h3>
-      <Timeline lineColor="#38292F">
+      <Timeline lineColor="#40589A">
         {result.map(el => (
           <TimelineItem
             key={uniqueId()}
             dateText={el[0]}
             dateInnerStyle={{
-              background: '#38292F',
+              background: '#40589A',
               color: '#FFF',
             }}
             bodyContainerStyle={{

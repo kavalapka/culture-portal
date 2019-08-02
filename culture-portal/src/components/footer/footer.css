@@ -8,27 +8,26 @@
 }
 
 .our-team__title span {
-  color: #A07092;
+  color: #40589A;
 }
 
 .our-team__list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .our-team__item {
   display: inline-block;
-  width: 135px;
-  height: 260px;
+  width: 160px;
+  height: 325px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,.26);
+  box-shadow: 0 10px 16px rgba(0,0,0,.26);
   margin: 9px;
   transition: box-shadow .2s ease;
   overflow: hidden;
 }
-
 .our-team__item:first-child {
   margin-left: 0;
 }

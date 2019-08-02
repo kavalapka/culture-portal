@@ -21,9 +21,11 @@ const AuthorOfTheDay = () => {
           <Card.Title id="author__title">{data.name}</Card.Title>
           <Card.Text>{data['birth-date']}</Card.Text>
           <Card.Text>{data.science}</Card.Text>
-          <Button id="author__button" style={{ margin: 'auto' }} variant="primary">
-            <Link to="/klinov" id="author__link">{t('more')}</Link>
-          </Button>
+          <Link to="/klinov" id="author__link">
+            <Button id="author__button" style={{ margin: 'auto' }} variant="primary">
+              {t('more')}
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
     </section>

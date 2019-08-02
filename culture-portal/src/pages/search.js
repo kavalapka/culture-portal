@@ -59,10 +59,14 @@ class ListPage extends React.Component {
   render() {
     const { authors } = this.state;
     return (
-      <Layout>
-        <SEO title="Page two" />
-        <Authors authors={authors} />
-      </Layout>
+      <div>
+        <Layout />
+        <main>
+          <SEO title="Page two" />
+          <Authors authors={authors} />
+        </main>
+        <footer>© Портал белорусских фотографов 2019</footer>
+      </div>
     );
   }
 }
