@@ -45,7 +45,7 @@ exports.frontmatter = {
     'klinov_6.jpg',
     'klinov_7.jpg',
     'klinov_8.jpg',
-    'klinov_9.jpeg',
+    'klinov_9.jpg',
     'klinov_10.jpg',
     'klinov_11.jpg',
     'klinov_12.jpg',
