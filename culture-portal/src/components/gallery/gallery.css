@@ -2,7 +2,7 @@
 	width: 23px;
 	height: 23px;
 	outline: none;
-	background: #A07092;
+	background: #40589A;
 	opacity: 0.5;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .carousel .control-prev.control-arrow:before {
-	border-right: 20px solid #A07092;
+	border-right: 20px solid #40589A;
 }
 
 .carousel .control-next.control-arrow:before {
-	border-left: 20px solid #A07092;
+	border-left: 20px solid #40589A;
 }
 
 .carousel .control-arrow:before,
@@ -48,25 +48,6 @@
 	margin: 0;
 }
 
-.carousel .slide .legend {
-	opacity: .8;
-	width: 400px;
-	background: rgba(112, 13, 81, 0.918);
-	font-size: 1.2rem;
-	word-wrap: break-word;
-}
-
-.carousel .slide .legend.slide1 {
-	margin: 0;
-	right: 5%;
-	bottom: 100px;
-}
-
-.carousel .slide .legend.slide2 {
-	right: 0;
-}
-
-.carousel .slide .legend.slide3 {
-	top: 30px;
-	bottom: initial;
+.carousel .slide {
+	background: #fff;
 }

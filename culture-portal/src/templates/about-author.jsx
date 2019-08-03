@@ -19,9 +19,9 @@ export default function Template(props) {
       <main>
         <div className="blog-post">
           <AutorDescription data={frontmatter} />
-          <Exhibition exhibitions={frontmatter.exhibitions} />
           <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
           <TimeLine activity={frontmatter.activity} />
+          <Exhibition exhibitions={frontmatter.exhibitions} />
           <Gallery data={frontmatter.works} />
         </div>
       </main>

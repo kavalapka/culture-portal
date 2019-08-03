@@ -16,8 +16,8 @@ const Header = () => {
         <Navbar.Collapse id="navbar">
           <Nav>
             <div className="wrapper">
-              <Nav.Item><Link to="/" activeStyle={{ color: '#D4D0C3' }} className="menuLink">{t('menu.main')}</Link></Nav.Item>
-              <Nav.Item><Link to="/search" activeStyle={{ color: '#D4D0C3' }} className="menuLink">{t('menu.search')}</Link></Nav.Item>
+              <Nav.Item><Link to="/" activeStyle={{ color: '#40589A' }} className="menuLink">{t('menu.main')}</Link></Nav.Item>
+              <Nav.Item><Link to="/search" activeStyle={{ color: '#40589A' }} className="menuLink">{t('menu.search')}</Link></Nav.Item>
             </div>
             <Nav.Item><Translate /></Nav.Item>
           </Nav>

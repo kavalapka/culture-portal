@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
 import AuthorOfTheDay from '../components/author-of-the-day';
-import MainSlider from '../components/main-slider';
+// import MainSlider from '../components/main-slider';
 
 import '../components/translate/i18n';
 import Description from '../components/portal-description/description';
@@ -17,10 +17,10 @@ const IndexPage = (props) => {
   return (
     <div>
       <section className="background"><Layout /></section>
+      {/* <MainSlider className="background" /> */}
       <main>
         <SEO title="Home" />
         <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }} />
-        <MainSlider />
         <Description />
         <AuthorOfTheDay data={data} />
         <Footer />

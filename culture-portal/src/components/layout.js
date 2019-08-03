@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import './layout.css';
 import './style/mainStyles.scss';
+// import MainSlider from './main-slider';
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const Layout = () => {
         }}
       >
         <Header siteTitle={data.site.siteMetadata.title} style={{ fontSize: '.7em' }} />
+        {/* <MainSlider /> */}
       </div>
     </>
   );

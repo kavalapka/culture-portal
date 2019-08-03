@@ -15,6 +15,7 @@ const Gallery = (props) => {
     <Fragment>
       <h3 className="photo_gallery">{t('gallery')}</h3>
       <Carousel
+        width="100%"
         dynamicHeight
         transitionTime={1000}
         emulateTouch
