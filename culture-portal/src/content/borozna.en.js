@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Belarusian art historian, art critic, photo artist. Ph.D. in History of Arts (1998). Rector of the Belarusian State Academy of Arts. Honorary Member of the Russian Academy of Arts',
   birthDate: 'November 20, 1962',
   birthPlace: 'Rakushevo',
+  birthPlaceLocation: {
+    name: 'Rakushevo',
+    lat: 54.23535,
+    lng: 29.80372,
+    center: {
+      lat: 53.016,
+      lng: 18.595,
+    },
+    zoom: 6,
+  },
   education: 'He graduated from Kruglyanskaya high school. In 1985 he graduated from the art-industrial faculty of the Belarusian State Academy of Arts',
   activity: [
     {
@@ -43,31 +53,61 @@ exports.frontmatter = {
       year: 1995,
       name: '«АРТУНОДИСКУС» Vitebsk',
       photo: 'borozna_7.jpg',
+      location: {
+        name: 'Vitebsk',
+        lat: 55.1904,
+        lng: 30.2049,
+      },
     },
     {
       year: 2000,
       name: '«Белы іней» Minsk',
       photo: 'borozna_2.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2004,
       name: '«Bunker church-gallery» Dusseldorf',
       photo: 'borozna_3.jpg',
+      location: {
+        name: 'Dusseldorf',
+        lat: 51.2217,
+        lng: 6.77616,
+      },
     },
     {
       year: 2008,
       name: '«Індустрыя святла» Minsk',
       photo: 'borozna_4.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2009,
       name: '«Ctrl + Art» Minsk',
       photo: 'borozna_5.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2011,
       name: '«Беларускі нацюрморт» Minsk',
       photo: 'borozna_6.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
   ],
   youtube: 'jT-Zq10ac8Q',

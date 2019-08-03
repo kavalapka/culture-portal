@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Беларускі фотамастак, навуковец, вынаходнік, публіцыст, педагог',
   birthDate: '12 лютага 1882',
   birthPlace: 'Мінск',
+  birthPlaceLocation: {
+    name: 'Мінск',
+    lat: 53.9,
+    lng: 27.56659,
+    center: {
+      lat: 47.0056,
+      lng: 28.8575,
+    },
+    zoom: 4,
+  },
   education: 'Мінская мужчынская гімназія Віленскі інтэрнат-канквіт Варшаўскі ўніверсітэт Дыжонскі ўніверсітэт',
   activity: [
     {
@@ -47,16 +57,31 @@ exports.frontmatter = {
       year: 1923,
       name: 'Этнаграфiчная экспедыцiя в Iгуменскaм и Лaгойскaм пaветах',
       photo: 'dashkevich_3.jpg',
+      location: {
+        name: 'Лагойск',
+        lat: 54.200402,
+        lng: 27.847504,
+      },
     },
     {
       year: 1957,
       name: '«Святло і цень. Фотакарткi Льва Дашкевiча», г.Мiнск',
       photo: 'dashkevich_4.jpg',
+      location: {
+        name: 'Мiнск',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2016,
       name: '«Святло і цень. Фотакарткi Льва Дашкевiча», г.Ерусалім',
       photo: 'dashkevich_8.jpg',
+      location: {
+        name: 'Ерусалім',
+        lat: 31.769,
+        lng: 35.2163,
+      },
     },
   ],
   youtube: 'gTpMQjc9k74',

@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Беларускі фатограф, мастак, дызайнер, паэт, культуролаг, мастацтвазнавец',
   birthDate: '16 сакавіка 1964',
   birthPlace: 'Мінск',
+  birthPlaceLocation: {
+    name: 'Минск',
+    lat: 53.9,
+    lng: 27.56659,
+    center:{
+      lat: 53.016,
+      lng: 18.595,
+    },
+    zoom:6,
+  },
   education: 'У 1979—1983 гг. вучыўся і скончыў Мінскае мастацкае вучылішча (цяпер — Мінскі дзяржаўны мастацкі каледж імя А. К. Глебава)',
   activity: [
     {
@@ -39,11 +49,21 @@ exports.frontmatter = {
       year: 2012,
       name: '«Under Ground» г.Леверкузен, Германія',
       photo: 'animpadistov_1.jpg',
+      location: {
+        name: 'Леверкузен',
+        lat: 51.046,
+        lng: 7.008,
+      },
     },
     {
       year: 2013,
       name: '«Under Ground» г.Торунь, Польшча',
       photo: 'animpadistov_2.jpg',
+      location: {
+        name: 'Торунь',
+        lat: 53.016,
+        lng: 18.595,
+      },
     },
   ],
   youtube: 'mO-yWp-Npng',

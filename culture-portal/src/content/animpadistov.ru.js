@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Белорусский фотограф, художник, дизайнер, поэт, культуролог, искусствовед',
   birthDate: '16 марта 1964',
   birthPlace: 'Минск',
+  birthPlaceLocation: {
+    name: 'Минск',
+    lat: 53.9,
+    lng: 27.56659,
+    center:{
+      lat: 53.016,
+      lng: 18.595,
+    },
+    zoom:6,
+  },
   education: 'В 1979—1983 гг. учился и закончил Минское художественное училище (теперь — Минский государственный художественный колледж имени А. К. Глебова)',
   activity: [
     {
@@ -39,11 +49,21 @@ exports.frontmatter = {
       year: 2012,
       name: '«Under Ground» г.Леверкузен, Германия',
       photo: 'animpadistov_1.jpg',
+      location: {
+        name: 'Леверкузен',
+        lat: 51.046,
+        lng: 7.008,
+        },
     },
     {
       year: 2013,
       name: '«Under Ground» г.Торунь, Польша',
       photo: 'animpadistov_2.jpg',
+      location: {
+        name: 'Торунь',
+        lat: 53.016,
+        lng: 18.595,
+      },
     },
   ],
   youtube: 'mO-yWp-Npng',

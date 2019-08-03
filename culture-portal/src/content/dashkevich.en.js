@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Belarusian photographer, publicist, teacher, scientist, inventor',
   birthDate: 'February 12, 1882',
   birthPlace: 'Minsk',
+  birthPlaceLocation: {
+    name: 'Minsk',
+    lat: 53.9,
+    lng: 27.56659,
+    center: {
+      lat: 47.0056,
+      lng: 28.8575,
+    },
+    zoom: 4,
+  },
   education: 'He was educated at the University of Dijon and the Graduate School of Graphic Arts in Paris (Department of Photography)',
   activity: [
     {
@@ -47,16 +57,31 @@ exports.frontmatter = {
       year: 1923,
       name: 'Ethnographic expedition in the Igumen and Logoisk regions',
       photo: 'dashkevich_3.jpg',
+      location: {
+        name: 'Logoisk',
+        lat: 54.200402,
+        lng: 27.847504,
+      },
     },
     {
       year: 1957,
       name: '"Light and shadow. Photos of Lev Dashkevich ”, Minsk',
       photo: 'dashkevich_4.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2016,
       name: '"Light and shadow. Photos of Lev Dashkevich ”, Jerusalem',
       photo: 'dashkevich_8.jpg',
+      location: {
+        name: 'Jerusalem',
+        lat: 31.769,
+        lng: 35.2163,
+      },
     },
   ],
   youtube: 'gTpMQjc9k74',
