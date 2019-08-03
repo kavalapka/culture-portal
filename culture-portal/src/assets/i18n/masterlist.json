@@ -1,5 +1,7 @@
 {
   "welcome": "string",
+  "blockquotes": "object",
+  "intro": "string",
   "placeholder": "string",
   "find": "string",
   "menu": {
@@ -17,6 +19,8 @@
   "our": "string",
   "team": "string",
   "timeline": "string",
+  "gallery": "string",
+  "slider":"object",
   "Exhibitions": "string",
   "Open Video": "string",
   "authors": [

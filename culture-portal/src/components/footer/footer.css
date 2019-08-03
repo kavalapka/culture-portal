@@ -5,6 +5,8 @@
 
 .our-team__title {
   margin: 20px 0;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 .our-team__title span {
@@ -20,14 +22,15 @@
 
 .our-team__item {
   display: inline-block;
-  width: 160px;
-  height: 325px;
+  width: 135px;
+  height: 265px;
   text-align: center;
-  box-shadow: 0 10px 16px rgba(0,0,0,.26);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, .26);
   margin: 9px;
   transition: box-shadow .2s ease;
   overflow: hidden;
 }
+
 .our-team__item:first-child {
   margin-left: 0;
 }
@@ -43,6 +46,6 @@
 }
 
 #our-team__gitIcon:hover {
-  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
   transition: box-shadow .2s ease;
 }
