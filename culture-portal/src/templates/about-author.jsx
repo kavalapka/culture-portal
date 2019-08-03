@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/layout';
@@ -13,8 +13,8 @@ import Map from '../components/map';
 import './about-author.css';
 
 export default function Template(props) {
-  const {data} = props;
-  const {frontmatter} = data.javascriptFrontmatter;
+  const { data } = props;
+  const { frontmatter } = data.javascriptFrontmatter;
   const locations = [frontmatter.birthPlaceLocation];
   frontmatter.exhibitions.forEach(exh => locations.push(exh.location));
   return (
@@ -22,11 +22,11 @@ export default function Template(props) {
       <Layout/>
       <main>
         <div className="blog-post">
-          <AutorDescription data={frontmatter} />
-          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
-          <TimeLine activity={frontmatter.activity} />
-          <Exhibition exhibitions={frontmatter.exhibitions} />
-          <Gallery data={frontmatter.works} />
+          <AutorDescription data={frontmatter}/>
+          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0}/>
+          <TimeLine activity={frontmatter.activity}/>
+          <Exhibition exhibitions={frontmatter.exhibitions}/>
+          <Gallery data={frontmatter.works}/>
           <Map locations={locations}/>
         </div>
       </main>
@@ -42,10 +42,10 @@ export const pageQuery = graphql`
       birthDate
       birthPlaceLocation { name, lat, lng, center {lat, lng}, zoom}
       name
-            death
-          activity{date, description}
-        works
-        science
+      death
+      activity{date, description}
+      works
+      science
       authorImage
       youtube
       youtubeStart
