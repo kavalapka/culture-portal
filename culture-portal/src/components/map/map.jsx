@@ -7,9 +7,6 @@ import {
 } from 'react-google-maps';
 
 
-
-
-
 const MapComponent = withScriptjs(withGoogleMap(props => (
   <GoogleMap defaultZoom={props.zoom} defaultCenter={props.center}>
     {props.places.map(place => (
