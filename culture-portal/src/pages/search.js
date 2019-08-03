@@ -58,6 +58,7 @@ class ListPage extends React.Component {
 
   render() {
     const { authors } = this.state;
+    const { t } = this.props;
     return (
       <div>
         <Layout />
@@ -65,7 +66,7 @@ class ListPage extends React.Component {
           <SEO title="Page two" />
           <Authors authors={authors} />
         </main>
-        <footer>© Портал белорусских фотографов 2019</footer>
+        <footer>{t('footer')}</footer>
       </div>
     );
   }

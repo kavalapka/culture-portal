@@ -9,7 +9,7 @@ import Photo from '../image';
 const Exhibition = ({ exhibitions }) => {
   const { t } = useTranslation();
   return (
-    <div>
+    <section className="exhibition">
       <h1>{t('Exhibitions')}</h1>
       <div className="exhib__group">
         {
@@ -26,7 +26,7 @@ const Exhibition = ({ exhibitions }) => {
         ))
       }
       </div>
-    </div>
+    </section>
   );
 };
 
