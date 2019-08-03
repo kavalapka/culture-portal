@@ -35,7 +35,7 @@ const MapComponent = withScriptjs(withGoogleMap(props => (
     {props.places.map(place => (
       <Marker
         key={place.name}
-        position={{ lat: place.lat, lng: place.lng }}
+        position={{lat: place.lat, lng: place.lng}}
         title={place.name}
       />
     ))}
@@ -46,14 +46,11 @@ const Map = ({locations}) => (
   <MapComponent
     className="map"
     googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKM45AYokEwz1P5vHnwYGRKhlN_wz8e2A"
-    loadingElement={<div style={{ height: '100%' }} />}
-    containerElement={<div style={{ height: '400px' }} />}
-    mapElement={<div style={{ height: '100%' }} />}
-    center={{
-      lat: 53.1333,
-      lng: 23.1643,
-    }}
-    zoom={7}
+    loadingElement={<div style={{height: '100%'}}/>}
+    containerElement={<div style={{height: '400px'}}/>}
+    mapElement={<div style={{height: '100%'}}/>}
+    center={locations[0].center}
+    zoom={6}
     places={locations}
   />
 );
