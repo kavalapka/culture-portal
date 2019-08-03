@@ -39,7 +39,7 @@ export const pageQuery = graphql`
     javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
     frontmatter {
       birthDate
-      birthPlaceLocation { name, lat, lng, center {lat, lng, zoom}}
+      birthPlaceLocation { name, lat, lng, center {lat, lng}, zoom}
       name
       death
       activity{date, description}

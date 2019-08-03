@@ -50,7 +50,7 @@ const Map = ({locations}) => (
     containerElement={<div style={{height: '400px'}}/>}
     mapElement={<div style={{height: '100%'}}/>}
     center={locations[0].center}
-    zoom={6}
+    zoom={locations[0].zoom}
     places={locations}
   />
 );
