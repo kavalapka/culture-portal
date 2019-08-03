@@ -9,6 +9,11 @@ exports.frontmatter = {
     name: 'Ракушава',
     lat: 54.23535,
     lng: 29.80372,
+    center: {
+      lat: 53.016,
+      lng: 18.595,
+    },
+    zoom: 6,
   },
   education: 'Закончыў Круглянскую сярэднюю школу. У 1985 годзе скончыў мастацка-прамысловы факультэт Беларускай дзяржаўнай акадэміі мастацтваў',
   activity: [
@@ -48,31 +53,61 @@ exports.frontmatter = {
       year: 1995,
       name: '«АРТУНОДИСКУС» г.Віцебск',
       photo: 'borozna_7.jpg',
+      location: {
+        name: 'Віцебск',
+        lat: 55.1904,
+        lng: 30.2049,
+      },
     },
     {
       year: 2000,
       name: '«Белы іней» г.Мінск',
       photo: 'borozna_2.jpg',
+      location: {
+        name: 'Мінск',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2004,
       name: '«Bunker church-gallery» г.Дюссельдорф, Германія',
       photo: 'borozna_3.jpg',
+      location: {
+        name: 'Дюссельдорф',
+        lat: 51.2217,
+        lng: 6.77616,
+      },
     },
     {
       year: 2008,
       name: '«Індустрыя святла» г.Мінск',
       photo: 'borozna_4.jpg',
+      location: {
+        name: 'Мінск',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2009,
       name: '«Ctrl + Art» г.Мінск',
       photo: 'borozna_5.jpg',
+      location: {
+        name: 'Мінск',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2011,
       name: '«Беларускі нацюрморт» г.Мінск',
       photo: 'borozna_6.jpg',
+      location: {
+        name: 'Мінск',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
   ],
   youtube: 'jT-Zq10ac8Q',
