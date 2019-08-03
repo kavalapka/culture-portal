@@ -7,8 +7,8 @@ const TimeLine = (props) => {
   const { t } = useTranslation();
   const { activity } = props;
   return (
-    <div className="timeline_wrapper">
-      <h3 className="timeline_title">{t('timeline')}</h3>
+    <section className="timeline_wrapper">
+      <h1>{t('timeline')}</h1>
       <Timeline lineColor="#40589A">
         {activity.map(el => (
           <TimelineItem
@@ -27,7 +27,7 @@ const TimeLine = (props) => {
           </TimelineItem>
         ))}
       </Timeline>
-    </div>
+    </section>
   );
 };
 
