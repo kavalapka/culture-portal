@@ -10,8 +10,8 @@ exports.frontmatter = {
     lat: 53.9,
     lng: 27.56659,
     center:{
-      lat: 53.016,
-      lng: 18.595,
+      lat: 53.1235,
+      lng: 18.0076,
     },
     zoom:6,
   },
