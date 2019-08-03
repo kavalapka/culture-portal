@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -13,6 +14,7 @@ import Description from '../components/portal-description/description';
 
 const IndexPage = (props) => {
   const { data } = props;
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -25,7 +27,7 @@ const IndexPage = (props) => {
         <AuthorOfTheDay data={data} />
         <Footer />
       </main>
-      <footer>© Портал белорусских фотографов 2019</footer>
+      <footer>{t('footer')}</footer>
     </div>
   );
 };
