@@ -13,7 +13,7 @@ const Gallery = (props) => {
 
   return (
     <section className="gallery">
-      <h1>{t('gallery')}</h1>
+      <h3>{t('gallery')}</h3>
       <Carousel
         width="100%"
         dynamicHeight

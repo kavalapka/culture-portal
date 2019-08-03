@@ -1,12 +1,12 @@
 .our-team {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .our-team__title {
   margin: 20px 0;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .our-team__title span {
@@ -29,6 +29,9 @@
   margin: 9px;
   transition: box-shadow .2s ease;
   overflow: hidden;
+}
+.our-team__item:hover{
+  transform:scale(1.2, 1.2);
 }
 
 .our-team__item:first-child {
