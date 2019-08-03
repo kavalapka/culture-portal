@@ -89,8 +89,8 @@ exports.frontmatter = {
       photo: 'klinov_4.jpg',
       location: {
         name: 'Варшава',
-        lat: 53.9,
-        lng: 27.56659,
+        lat: 52.2298,
+        lng: 21.0118,
       },
     },
     {
@@ -109,8 +109,8 @@ exports.frontmatter = {
       photo: 'klinov_6.jpg',
       location: {
         name: 'Варшава',
-        lat: 53.9,
-        lng: 27.56659,
+        lat: 52.2298,
+        lng: 21.0118,
       },
 
     },
