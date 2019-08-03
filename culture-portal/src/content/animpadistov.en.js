@@ -9,6 +9,11 @@ exports.frontmatter = {
     name: 'Minsk',
     lat: 53.9,
     lng: 27.56659,
+    center:{
+      lat: 53.016,
+      lng: 18.595,
+    },
+    zoom:6,
   },
   education: '1979-1983 graduated from Minsk Art college (now - Minsk State art college named after A.K. Glebov)',
   activity: [
