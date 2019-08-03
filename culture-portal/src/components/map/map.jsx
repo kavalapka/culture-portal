@@ -1,5 +1,7 @@
 import React from 'react';
+import lodash from 'lodash'
 import {
+  InfoWindow,
   withGoogleMap,
   GoogleMap,
   Marker,
@@ -11,7 +13,7 @@ const MapComponent = withScriptjs(withGoogleMap(props => (
   <GoogleMap defaultZoom={props.zoom} defaultCenter={props.center}>
     {props.places.map(place => (
       <Marker
-        key={place.name}
+        key={_.uniqueId("")}
         position={{lat: place.lat, lng: place.lng}}
         title={place.name}
       />
