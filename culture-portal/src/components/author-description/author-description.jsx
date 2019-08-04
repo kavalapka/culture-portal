@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Video from '../video';
 import Photo from '../image';
 
 const AutorDescription = (props) => {
@@ -17,6 +18,7 @@ const AutorDescription = (props) => {
           <Card.Title id="author-description_title">{name}</Card.Title>
           <Card.Text style={{ marginBottom: '0' }}>{`( ${yearsLife} )`}</Card.Text>
           <Card.Text>{science}</Card.Text>
+          <Video youtubeId={data.youtube} start={data.youtubeStart || 0} />
         </Card.Body>
       </Card>
     </section>
