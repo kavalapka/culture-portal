@@ -54,6 +54,19 @@ Build production version
 | 1h | implication of the Google Map module for react |
 | 2h | bug fixes and adjustments |
 
+
+***feodorius***
+
+| time spent| feature |
+|-----------| --------|
+| 1h | collecting info about the photographer |
+| 12h | searhing react-bootstrap slider, studying and implementation |
+| 3h | styling and fixing the gallery section problems |
+| 1h | collecting info for portal description |
+| 3h | implementation of portal description |
+| 4h | collecting info for quotes of main slider, implementation of main slider |
+| 2h | minor styling fixes in components |
+
 # Evaluation
 
 Total result - **220** / **240**
