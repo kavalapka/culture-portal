@@ -79,6 +79,19 @@ Build production version
 | 4h | implement page 404 |
 | 3h | fix errors  |
 
+
+***LoraBard***
+
+| time spent| feature |
+|-----------| --------|
+| 2h | collecting information about the photographer |
+| 5h | pages design development [https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1](https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1) |
+| 5h | header implementation |
+| 4h | search page implementation |
+| 1h | add block with background image to the main page|
+| 1h | add inforomation of contribution of each member to the main page|
+| 3h | add common styles of pages, minor styling fixes in components |
+
 # Evaluation
 
 Total result - **220** / **240**
