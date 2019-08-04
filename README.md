@@ -63,9 +63,21 @@ Build production version
 | 12h | searhing react-bootstrap slider, studying and implementation |
 | 3h | styling and fixing the gallery section problems |
 | 1h | collecting info for portal description |
-| 3h | implementation of portal description |
+| 1h | implementation of portal description |
 | 4h | collecting info for quotes of main slider, implementation of main slider |
 | 2h | minor styling fixes in components |
+
+
+***DzmitryI***
+
+| time spent| feature |
+|-----------|---------|
+| 2h | collecting information about the photographer |
+| 4h | implement footer |
+| 5h | implement timeline |
+| 4h | implement card author description |
+| 4h | implement page 404 |
+| 3h | fix errors  |
 
 # Evaluation
 
