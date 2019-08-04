@@ -22,5 +22,7 @@
   "Open Video": "string",
   "gallery": "string",
   "slider": "object",
-  "footer": "string"
+  "footer": "string",
+  "error404": "string",
+  "description404": "string"
 }
