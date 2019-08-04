@@ -34,14 +34,6 @@
   transform:scale(1.2, 1.2);
 }
 
-.our-team__item:first-child {
-  margin-left: 0;
-}
-
-.our-team__item:last-child {
-  margin-right: 0;
-}
-
 #our-team__gitIcon {
   margin: 10px 0;
   width: 30%;
