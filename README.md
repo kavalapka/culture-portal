@@ -1,21 +1,21 @@
 # RSSchool Culture Portal
 
-###Task
-https://github.com/rolling-scopes-school/tasks/blob/2018-Q3/tasks/codejam-culture-portal.md
+### Task https://github.com/rolling-scopes-school/tasks/blob/2018-Q3/tasks/codejam-culture-portal.md
 
-##How to run project:
-####npm install
+## How to run project:
+#### npm install
 Install packages
 
-####npm start
+#### npm start
 Start project in develop mode
 
-####npm build
+#### npm build
 Build production version
+ 
+ 
+# Worklogs
 
-##Worklogs
-
-*kavalapka*
+***kavalapka***
 
 | time spent| feature |
 |-----------| --------|
@@ -29,6 +29,92 @@ Build production version
 | 20h| routing with language in URL|
 | 2h | Photo component |
 | 5h | RnD Netlify cms |
+
+ 
+***juliastetskaya***
+
+| time spent| feature |
+|-----------| --------|
+| 2h | collecting information about the photographer |
+| 3h | put content in json |
+| 2h | put content in js files |
+| 5h | studying and implication of the translation module |
+| 3h | add Photograph of the Day |
+| 18h | studying and attempt to the implication Netlify cms |
+| 1h | Map component completion |
+| 7h | checking PRs other team members |
+ 
+ 
+***slayer110***
+
+| time spent| feature |
+|-----------| --------|
+| 1h | collecting information about the photographer |
+| 15h |studying of the Google Map module for react |  |
+| 1h | implication of the Google Map module for react |
+| 2h | bug fixes and adjustments |
+
+
+***feodorius***
+
+| time spent| feature |
+|-----------| --------|
+| 1h | collecting info about the photographer |
+| 12h | searhing react-bootstrap slider, studying and implementation |
+| 3h | styling and fixing the gallery section problems |
+| 1h | collecting info for portal description |
+| 1h | implementation of portal description |
+| 4h | collecting info for quotes of main slider, implementation of main slider |
+| 2h | minor styling fixes in components |
+
+
+***DzmitryI***
+
+| time spent| feature |
+|-----------|---------|
+| 2h | collecting information about the photographer |
+| 4h | implement footer |
+| 5h | implement timeline |
+| 4h | implement card author description |
+| 4h | implement page 404 |
+| 3h | fix errors  |
+
+
+***LoraBard***
+
+| time spent| feature |
+|-----------| --------|
+| 2h | collecting information about the photographer |
+| 5h | pages design development [https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1](https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1) |
+| 5h | header implementation |
+| 4h | search page implementation |
+| 1h | add block with background image to the main page|
+| 1h | add inforomation of contribution of each member to the main page|
+| 3h | add common styles of pages, minor styling fixes in components |
+
+# Evaluation
+
+Total result - **220** / **240**
+
+### Min scope - **40** / **40**
+- [x] **10** Main page + page with a list of authors + author's page (only html);
+- [x] **10** Page with list of authors contains search widget;
+- [x] **20** Portal has two languages;
+
+### Normal scope - **130** / **130**
+- [x] **10** Author's page contains timeline;
+- [x] **10** Author's page contains video overlay;
+- [x] **20** Author's page contains photo gallery;
+- [x] **10** Author's page contains map (geowidget);
+- [x] **40** Project is made using react (max 40 - if all widgets are done in React);
+- [x] **20** Design;
+- [x] **20** material-ui / bootstrap is used 
+
+### Extra scope - **50**  / **70**
+- [x] **10** Confidence of the project presentation;
+- [x] **30** Project is made using gatsbyjs;
+- [ ] **20** contentful / netlify cms is used for content management
+- [x] **10** Portal has third language;
 
 
 # Contributing
