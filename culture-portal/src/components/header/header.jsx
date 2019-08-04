@@ -12,10 +12,10 @@ import '../translate/i18n';
 class Header extends React.Component {
   componentDidMount() {
     const { i18n } = this.props;
-    i18n.on('languageChanged', () => {
-      console.log('LANGUAGE CHANGED');
-      this.setState({});
-    });
+    // i18n.on('languageChanged', () => {
+    //   console.log('LANGUAGE CHANGED');
+    //   this.setState({});
+    // });
 
     const lang = window.location.pathname.split('/')[1];
     i18n.changeLanguage(lang);
