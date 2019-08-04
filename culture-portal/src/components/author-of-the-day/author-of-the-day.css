@@ -54,9 +54,16 @@
     flex-direction: column;
     text-align: center;
   }
+  #author__science {
+    max-width: 100%;
+  }
 
   .author__photo {
     align-self: center;
     margin-bottom: 30px;
+  }
+
+  #author__description{
+    margin-left:0;
   }
 }
