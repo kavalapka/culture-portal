@@ -12,10 +12,14 @@ import '../translate/i18n';
 class Header extends React.Component {
   componentDidMount() {
     const { i18n } = this.props;
+    // set .split('/')[2] for production
     const lang = window.location.pathname.split('/')[1];
-    i18n.changeLanguage(lang);
-    const page = window.location.pathname.split('/').slice(2).join('/');
-    navigate(`/${lang}/${page}`);
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+      // set .slice(3) for production
+      const page = window.location.pathname.split('/').slice(2).join('/');
+      navigate(`/${lang}/${page}`);
+    }
   }
 
   render() {

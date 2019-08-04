@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { uniqueId } from 'lodash';
 import SearchDebounce from '../SearchDebounce';
@@ -15,6 +15,7 @@ const Search = ({ basicAuthors }) => {
   };
   const { t } = useTranslation();
   const [authors, setAuthors] = useState(basicAuthors.sort(compare));
+  useEffect(() => setAuthors(basicAuthors), [basicAuthors]);
   const handleChange = (text) => {
     const searchText = text.toLowerCase();
     setAuthors(

@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation, withTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { uniqueId } from 'lodash';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -16,7 +15,7 @@ const Authors = (props) => {
   const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
   return (
     <ul className="ml-0">
-      <Search key={uniqueId()} basicAuthors={authorsWithSelectedLang} />
+      <Search basicAuthors={authorsWithSelectedLang} />
     </ul>
   );
 };
