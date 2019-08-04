@@ -2,8 +2,6 @@ import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/seo';
-import '../components/translate/i18n';
-import '../components/style/404Styles.css';
 
 const NotFoundPage = () => {
   const { t } = useTranslation();
@@ -14,7 +12,7 @@ const NotFoundPage = () => {
       <h3>{t('error404')}</h3>
       <Fragment>
         <h4>{t('description404')}</h4>
-        <p className="intro">{t('intro')}</p>
+        <p className="intro404">{t('intro').slice(-65)}</p>
       </Fragment>
       <Link className="btn-primary" to="/">Go back to the homepage</Link>
     </div>
