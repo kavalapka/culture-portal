@@ -51,10 +51,10 @@ class Footer extends React.Component {
     const { t } = this.props;
     return (
       <section className="our-team">
-        <h2 className="our-team__title">
+        <h3 className="our-team__title">
           <span>{t('our')}</span>
           {t('team')}
-        </h2>
+        </h3>
         <div className="our-team__list">
           {items.length > 0 && items.map(item => (
             <Card className="our-team__item" key={uniqueId()}>
