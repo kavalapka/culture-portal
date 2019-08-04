@@ -85,7 +85,7 @@ Build production version
 | time spent| feature |
 |-----------| --------|
 | 2h | collecting information about the photographer |
-| 5h | pages design development (https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1)[https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1] |
+| 5h | pages design development [https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1](https://www.figma.com/file/qWBGsREMQsFXtcJSjB1rvi/CodeJam?node-id=0%3A1) |
 | 5h | header implementation |
 | 4h | search page implementation |
 | 1h | add block with background image to the main page|
