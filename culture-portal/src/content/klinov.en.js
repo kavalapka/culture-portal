@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Belarusian artist, designer, photographer, writer, screenwriter, editor-in-chief of the magazine “pARTisan” (2002)',
   birthDate: 'September 5, 1965',
   birthPlace: 'Minsk',
+  birthPlaceLocation: {
+    name: 'Minsk',
+    lat: 53.9,
+    lng: 27.56659,
+    center: {
+      lat: 50.088,
+      lng: 14.4208,
+    },
+    zoom: 5,
+  },
   education: 'He studied at children\'s art school number 1 in 1976-1980, and in art studios and workshops of Vladimir Tkachenko, Richard May and Vitaly Charnabrysava in 1978-1982.\nIn 1982-1987 he studied at the Faculty of Architecture of the Belarusian Polytechnic Institute (with teachers Galina Polyanskaya, Vyacheslav Angelov, Alexander Kollontai, etc.) and received a specialization in urban planning',
   activity: [
     {
@@ -47,31 +57,61 @@ exports.frontmatter = {
       year: 1986,
       name: 'Personal apartment exhibition (Minsk, apartment of Artur Klinov)',
       photo: 'klinov_11.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 1994,
       name: 'Gallery "Vita Nova" (Minsk, Belarus)',
       photo: 'klinov_2.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 1995,
       name: '"The Pioneer Death" Project, г.Мінск, Беларусь',
       photo: 'klinov_3.jpg',
+      location: {
+        name: 'Minsk',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 1998,
       name: '"Columbarium of World Literature" (Warsaw, Poland)',
       photo: 'klinov_4.jpg',
+      location: {
+        name: 'Warsaw',
+        lat: 52.2298,
+        lng: 21.0118,
+      },
     },
     {
       year: 2003,
       name: '"Sweet straw life" (Marseille, France)',
       photo: 'klinov_5.jpg',
+      location: {
+        name: 'Marseille',
+        lat: 43.297,
+        lng: 5.38107,
+      },
     },
     {
       year: 2008,
       name: 'Gallery "Zoja Gallery" (Warsaw, Poland)',
       photo: 'klinov_6.jpg',
+      location: {
+        name: 'Варшава',
+        lat: 52.2298,
+        lng: 21.0118,
+      },
     },
   ],
   youtube: 'BHGn4Zk49vY',

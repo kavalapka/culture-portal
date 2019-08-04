@@ -8,7 +8,7 @@ const TimeLine = (props) => {
   const { activity } = props;
   return (
     <section className="timeline_wrapper">
-      <h1>{t('timeline')}</h1>
+      <h3>{t('timeline')}</h3>
       <Timeline lineColor="#40589A">
         {activity.map(el => (
           <TimelineItem

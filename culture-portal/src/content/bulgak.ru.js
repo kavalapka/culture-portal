@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Белорусский фотограф, основатель и руководитель Виленского фотоклуба, редактар газет „Przegląd Fotograficzny“, „Fotograf Polski“',
   birthDate: '6 октября 1876',
   birthPlace: 'Остошина под Новогрудком',
+  birthPlaceLocation: {
+    name: 'Остошино',
+    lat: 53.69559,
+    lng: 26.02326,
+    center: {
+      lat: 53.69559,
+      lng: 26.02326,
+    },
+    zoom: 6,
+  },
   education: 'Закончил классическую гимназию в Вильнюсе. В 1897-1899 годах изучал философию в Яггелонском университете в Кракове',
   activity: [
     {
@@ -39,16 +49,31 @@ exports.frontmatter = {
       year: 1931,
       name: 'Серия фотоальбомов "Wędrówki fotografa"',
       photo: 'bulgak_1.jpg',
+      location: {
+        name: 'Польша',
+        lat: 52,
+        lng: 20,
+      },
     },
     {
       year: 1935,
       name: 'Книга про путешествие из Вильно на оз.Нарочь',
       photo: 'bulgak_3.jpg',
+      location: {
+        name: 'Вильнюс',
+        lat: 54.6892,
+        lng: 25.2798,
+      },
     },
     {
       year: 1937,
       name: 'Фотоиллюстрации для путеводителя по городу Юлиуша Клоса',
       photo: 'bulgak_4.jpg',
+      location: {
+        name: 'Польша',
+        lat: 52,
+        lng: 20,
+      },
     },
   ],
   youtube: 'Ato3OAWjdDA',
