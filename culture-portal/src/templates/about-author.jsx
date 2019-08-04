@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,6 @@ export default function Template(props) {
 
   return (
     <div>
-      <Suspense fallback={<div>Loading</div>}>
       <Layout />
       <main>
         <div className="blog-post">
@@ -35,7 +34,6 @@ export default function Template(props) {
         </div>
       </main>
       <footer>{t('footer')}</footer>
-      </Suspense>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation, withTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import { Navbar, Nav, Image } from 'react-bootstrap';
 import { navigate } from 'gatsby';
 import Link from '../Link';
@@ -12,21 +12,14 @@ import '../translate/i18n';
 class Header extends React.Component {
   componentDidMount() {
     const { i18n } = this.props;
-    // i18n.on('languageChanged', () => {
-    //   console.log('LANGUAGE CHANGED');
-    //   this.setState({});
-    // });
-
     const lang = window.location.pathname.split('/')[1];
     i18n.changeLanguage(lang);
-    console.log(`DETECTED: ${lang}`, i18n.language);
     const page = window.location.pathname.split('/').slice(2).join('/');
     navigate(`/${lang}/${page}`);
   }
 
   render() {
-    const { t, i18n } = this.props;
-    console.log(`Render: ${i18n.language}`);
+    const { t } = this.props;
     return (
       <header>
         <Navbar expand="md">

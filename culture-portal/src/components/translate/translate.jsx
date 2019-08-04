@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 import { useTranslation } from 'react-i18next';
 import { navigate } from 'gatsby';
@@ -6,12 +6,10 @@ import { navigate } from 'gatsby';
 const Translate = () => {
   const { t, i18n } = useTranslation();
   const value = i18n.language;
-
   const changeLanguage = (locale) => {
     i18n.changeLanguage(locale);
     // eslint-disable-next-line no-undef
     const page = window.location.pathname.split('/').slice(2).join('/');
-    console.log('navigate to: ', page, locale)
     navigate(`/${locale}/${page}`);
   };
 

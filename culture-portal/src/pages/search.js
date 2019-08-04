@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation, withTranslation } from 'react-i18next';
-import { graphql, navigate } from 'gatsby';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { uniqueId } from 'lodash';
 
@@ -46,22 +46,17 @@ query {
 }
 `;
 
-class ListPage extends React.Component {
-  render() {
-    console.log('render list');
-    const { t, data } = this.props;
-    return (
-      <div>
-        <Layout />
-        <main>
-          <SEO title="Page two" />
-          <Authors authors={data.allJavascriptFrontmatter.edges} />
-        </main>
-        <footer>{t('footer')}</footer>
-      </div>
-    );
-  }
-}
+const ListPage = ({ t, data }) => (
+  <div>
+    <Layout />
+    <main>
+      <SEO title="Page two" />
+      <Authors authors={data.allJavascriptFrontmatter.edges} />
+    </main>
+    <footer>{t('footer')}</footer>
+  </div>
+);
+
 
 export default withTranslation()(ListPage);
 
