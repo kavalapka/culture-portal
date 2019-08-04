@@ -13,7 +13,22 @@ Start project in develop mode
 ####npm build
 Build production version
 
-##Worklog
+##Worklogs
+
+*kavalapka*
+
+| time spent| feature |
+|-----------| --------|
+| 5h | Video Button component |
+| 3h | prepare Author's data to work with Video component |
+| 3h | Exhibition componet |
+| 3h | prepare Author's data to work with Exhibition component |
+| 1h | deploy to gh-pages|
+| non-feature but important|
+| 2h | github teamwork cheatsheet |
+| 20h| routing with language in URL|
+| 2h | Photo component |
+| 5h | RnD Netlify cms |
 
 
 # Contributing
@@ -45,6 +60,7 @@ do any changes you need
 * receive __Approve__
   * merge your branch to master
   * delete branch
+  
 ![](https://i.imgur.com/604Sxw2.png)
 ![](https://i.imgur.com/nIU4QSV.png)
 * receive __Improvement Request__ with comments

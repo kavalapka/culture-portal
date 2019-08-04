@@ -9,11 +9,15 @@ import Video from '../components/video';
 import Exhibition from '../components/exhibition';
 import AutorDescription from '../components/author-description';
 import Gallery from '../components/gallery';
+
+import Map from '../components/map';
 import './about-author.css';
 
 export default function Template(props) {
   const { data } = props;
   const { frontmatter } = data.javascriptFrontmatter;
+  const locations = [frontmatter.birthPlaceLocation];
+  frontmatter.exhibitions.forEach(exh => locations.push(exh.location));
   const { t } = useTranslation();
 
   return (
@@ -26,6 +30,7 @@ export default function Template(props) {
           <TimeLine activity={frontmatter.activity} />
           <Exhibition exhibitions={frontmatter.exhibitions} />
           <Gallery data={frontmatter.works} />
+          <Map locations={locations} />
         </div>
       </main>
       <footer>{t('footer')}</footer>
@@ -35,14 +40,15 @@ export default function Template(props) {
 
 export const pageQuery = graphql`
   query($searchPath: String!, $lang: String!) {
-          javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
-        frontmatter {
-          birthDate
+    javascriptFrontmatter(frontmatter: {path: {eq: $searchPath}, lng: {eq: $lang}}) {
+    frontmatter {
+      birthDate
+      birthPlaceLocation { name, lat, lng, center {lat, lng}, zoom}
       name
-            death
-          activity{date, description}
-        works
-        science
+      death
+      activity{date, description}
+      works
+      science
       authorImage
       youtube
       youtubeStart
@@ -50,6 +56,7 @@ export const pageQuery = graphql`
         name
         photo
         year
+        location {name, lat, lng}
       }
       works
     }

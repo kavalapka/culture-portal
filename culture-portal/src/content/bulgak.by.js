@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Беларускі фатограф, заснавальнік і старшыня Віленскага фотаклуба, рэдактар часопісаў  „Przegląd Fotograficzny“, „Fotograf Polski“',
   birthDate: '6 кастрычніка 1876',
   birthPlace: 'Асташына пад Навагрудкам',
+  birthPlaceLocation: {
+    name: 'Асташына',
+    lat: 53.69559,
+    lng: 26.02326,
+    center: {
+      lat: 53.69559,
+      lng: 26.02326,
+    },
+    zoom: 6,
+  },
   education: 'Скончыў класічную гімназію ў Вільні. У 1897-1899 гадах вывучаў філасофію ў Ягелонскім універсітэце ў Кракаве',
   activity: [
     {
@@ -35,16 +45,31 @@ exports.frontmatter = {
       year: 1931,
       name: 'Серыя фотаальбомаў "Wędrówki fotografa"',
       photo: 'bulgak_1.jpg',
+      location: {
+        name: 'Польша',
+        lat: 52,
+        lng: 20,
+      },
     },
     {
       year: 1935,
       name: 'Кніга пра падарожжа з Вільні на оз.Нарочь',
       photo: 'bulgak_3.jpg',
+      location: {
+        name: 'Вільнюс',
+        lat: 54.6892,
+        lng: 25.2798,
+      },
     },
     {
       year: 1937,
       name: 'Фотаілюстрацыі для даведніка па горадзе Юліуша Клос',
       photo: 'bulgak_4.jpg',
+      location: {
+        name: 'Польша',
+        lat: 52,
+        lng: 20,
+      },
     },
   ],
   youtube: 'Ato3OAWjdDA',

@@ -22,5 +22,6 @@
   "Open Video": "string",
   "gallery": "string",
   "slider": "object",
-  "footer": "string"
+  "footer": "string",
+  "map": "string"
 }
