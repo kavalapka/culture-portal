@@ -44,6 +44,15 @@ Build production version
 | 1h | Map component completion |
 | 7h | checking PRs other team members |
  
+ 
+***slayer110***
+
+| time spent| feature |
+|-----------| --------|
+| 1h | collecting information about the photographer |
+| 15h |studying of the Google Map module for react |  |
+| 1h | implication of the Google Map module for react |
+| 2h | bug fixes and adjustments |
 
 # Evaluation
 
