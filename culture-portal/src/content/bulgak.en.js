@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Belarusian  photographer,he founders and chairman of the Vilna Photo Club, the editor of the magazines "Przegląd Fotograficzny", "Fotograf Polski"',
   birthDate: 'October 6, 1876',
   birthPlace: 'Ostashino near Novogrudok',
+  birthPlaceLocation: {
+    name: 'Ostashino',
+    lat: 53.69559,
+    lng: 26.02326,
+    center: {
+      lat: 53.69559,
+      lng: 26.02326,
+    },
+    zoom: 6,
+  },
   education: 'Graduated from the classical gymnasium in Vilna. In 1897-1899 he studied philosophy at the Jagiellonian University in Krakow',
   activity: [
     {
@@ -39,16 +49,31 @@ exports.frontmatter = {
       year: 1931,
       name: 'Series of photo albums "Wędrówki fotografa"',
       photo: 'bulgak_1.jpg',
+      location: {
+        name: 'Poland',
+        lat: 52,
+        lng: 20,
+      },
     },
     {
       year: 1935,
       name: 'Book about the journey from Vilna to Lake Naroche',
       photo: 'bulgak_3.jpg',
+      location: {
+        name: 'Vilnius',
+        lat: 54.6892,
+        lng: 25.2798,
+      },
     },
     {
       year: 1937,
       name: 'Photo illustrations for the city guide of Julius Clos',
       photo: 'bulgak_4.jpg',
+      location: {
+        name: 'Poland',
+        lat: 52,
+        lng: 20,
+      },
     },
   ],
   youtube: 'Ato3OAWjdDA',

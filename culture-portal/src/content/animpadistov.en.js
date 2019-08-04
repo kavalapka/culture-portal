@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Belarusian photographer, artist, designer, poet, cultural studies, art historian',
   birthDate: 'March 16, 1964',
   birthPlace: 'Minsk',
+  birthPlaceLocation: {
+    name: 'Minsk',
+    lat: 53.9,
+    lng: 27.56659,
+    center: {
+      lat: 53.1235,
+      lng: 18.0076,
+    },
+    zoom: 6,
+  },
   education: '1979-1983 graduated from Minsk Art college (now - Minsk State art college named after A.K. Glebov)',
   activity: [
     {
@@ -35,11 +45,21 @@ exports.frontmatter = {
       year: 2012,
       name: '«Under Ground» Leverkusen, Germany',
       photo: 'animpadistov_1.jpg',
+      location: {
+        name: 'Leverkusen',
+        lat: 51.046,
+        lng: 7.008,
+      },
     },
     {
       year: 2013,
       name: '«Under Ground» Torun, Poland',
       photo: 'animpadistov_2.jpg',
+      location: {
+        name: 'Torun',
+        lat: 53.016,
+        lng: 18.595,
+      },
     },
   ],
   youtube: 'mO-yWp-Npng',

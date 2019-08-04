@@ -5,6 +5,16 @@ exports.frontmatter = {
   science: 'Белорусский фотограф, публицист, педагог, ученый, изобретатель',
   birthDate: '12 февраля 1882',
   birthPlace: 'Минск',
+  birthPlaceLocation: {
+    name: 'Минск',
+    lat: 53.9,
+    lng: 27.56659,
+    center: {
+      lat: 47.0056,
+      lng: 28.8575,
+    },
+    zoom: 4,
+  },
   education: 'Получил образование в Дижонском университете и Высшей школе графических искусств в Париже (отделение фотографии)',
   activity: [
     {
@@ -47,16 +57,31 @@ exports.frontmatter = {
       year: 1923,
       name: 'Этнографическая экспедиция в Игуменском и Логойском поветах',
       photo: 'dashkevich_3.jpg',
+      location: {
+        name: 'Логойск',
+        lat: 54.200402,
+        lng: 27.847504,
+      },
     },
     {
       year: 1957,
       name: '«Свет и тень. Фотографии Льва Дашкевича», г.Минск',
       photo: 'dashkevich_4.jpg',
+      location: {
+        name: 'Минск',
+        lat: 53.9,
+        lng: 27.56659,
+      },
     },
     {
       year: 2016,
       name: '«Свет и тень. Фотографии Льва Дашкевича», г.Иерусалим',
       photo: 'dashkevich_8.jpg',
+      location: {
+        name: 'Иерусалим',
+        lat: 31.769,
+        lng: 35.2163,
+      },
     },
   ],
   youtube: 'gTpMQjc9k74',
