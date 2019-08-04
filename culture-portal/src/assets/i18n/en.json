@@ -42,5 +42,7 @@
     "https://www.vladtime.ru/uploads/posts/2018-02/1518885831_fuji-x100t-digital-camera_1920x1200_wallpaper.jpg"
   ],
   "map": "Map",
-  "footer": "© Portal of Belarusian photographers 2019"
+  "footer": "© Portal of Belarusian photographers 2019",
+  "error404": "You just hit a route that doesn't exist... the sadness",
+  "description404": "What is this site?"
 }
