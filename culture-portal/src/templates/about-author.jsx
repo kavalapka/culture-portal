@@ -19,15 +19,15 @@ export default function Template(props) {
   frontmatter.exhibitions.forEach(exh => locations.push(exh.location));
   return (
     <div>
-      <Layout/>
+      <Layout />
       <main>
         <div className="blog-post">
-          <AutorDescription data={frontmatter}/>
-          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0}/>
-          <TimeLine activity={frontmatter.activity}/>
-          <Exhibition exhibitions={frontmatter.exhibitions}/>
-          <Gallery data={frontmatter.works}/>
-          <Map locations={locations}/>
+          <AutorDescription data={frontmatter} />
+          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
+          <TimeLine activity={frontmatter.activity} />
+          <Exhibition exhibitions={frontmatter.exhibitions} />
+          <Gallery data={frontmatter.works} />
+          <Map locations={locations} />
         </div>
       </main>
       <footer>© Портал белорусских фотографов 2019</footer>
