@@ -1,6 +1,6 @@
 .author-description_wrapper {
   display: flex;
-  margin: 0px 0px 45px 0px;
+  margin: 0px 0px 120px 0px;
   font-family: 'Roboto';
   text-align: center;
 }
@@ -22,7 +22,6 @@
   .author-description_wrapper {
     flex-direction: column;
   }
-
   .author-description_photo {
     margin: auto;
     width: 60%;
@@ -36,7 +35,7 @@
 
 #author-description_title {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   font-size: 30px;
   font-weight: bold;
 }

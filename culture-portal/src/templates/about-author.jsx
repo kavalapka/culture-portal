@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
-import Video from '../components/video';
 import Exhibition from '../components/exhibition';
 import AutorDescription from '../components/author-description';
 import Gallery from '../components/gallery';
@@ -26,7 +25,6 @@ export default function Template(props) {
       <main>
         <div className="blog-post">
           <AutorDescription data={frontmatter} />
-          <Video youtubeId={frontmatter.youtube} start={frontmatter.youtubeStart || 0} />
           <TimeLine activity={frontmatter.activity} />
           <Exhibition exhibitions={frontmatter.exhibitions} />
           <Gallery data={frontmatter.works} />
