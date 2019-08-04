@@ -5,18 +5,18 @@ import { navigate } from 'gatsby';
 
 const Translate = () => {
   const { t, i18n } = useTranslation();
-  const [value, setCount] = useState(i18n.language);
+  const value = i18n.language;
 
   const changeLanguage = (locale) => {
     i18n.changeLanguage(locale);
     // eslint-disable-next-line no-undef
     const page = window.location.pathname.split('/').slice(2).join('/');
+    console.log('navigate to: ', page, locale)
     navigate(`/${locale}/${page}`);
   };
 
   const handleChange = (event) => {
     changeLanguage(`${event.target.value}`);
-    setCount(`${event.target.value}`);
   };
 
   return (

@@ -4,6 +4,12 @@ import jsonEN from '../../assets/i18n/en.json';
 import jsonBY from '../../assets/i18n/by.json';
 import jsonRU from '../../assets/i18n/ru.json';
 
+function getLanguage() {
+
+  const lng = window.location.pathname.split('/')[1];
+  console.log(`DETECTED: ${lng}`);
+  return lng || 'ru';
+}
 
 i18n
   // .use(LanguageDetector) // use to set basic language of user's browser language
@@ -23,10 +29,10 @@ i18n
     },
     lng: 'ru',
     fallbackLng: 'ru',
-    debug: false,
-
+    debug: true,
+    initImmediate: false,
     // have a common namespace used around the full app
-    ns: ['translations'],
+    // ns: ['translations'],
     defaultNS: 'translations',
 
     // keySeparator: false, // we use content as keys
@@ -34,6 +40,7 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+
   });
 
 export default i18n;
