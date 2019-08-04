@@ -2,13 +2,13 @@
   height: 100vh;
   padding: 5% 0;
   text-align: center;
-  background-image: url('../../images/back_3.jpg');
+  background-image: url('../../images/sky404.jpg');
   background-attachment: fixed;
   background-size:cover;
   opacity: 0.9;
 }
 
-h5 {
+h4 {
   margin-bottom: 0;
 }
 
@@ -17,5 +17,4 @@ h5 {
   margin: 0 auto;
   padding-bottom: 20px;
   font-size: 14px;
-
 }
