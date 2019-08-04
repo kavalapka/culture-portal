@@ -12,9 +12,9 @@ const Author = ({ author, t }) => (
       <Card.Text>
         {author.birthDate}
         {' '}
-(
+          (
         {author.birthPlace}
-)
+          )
       </Card.Text>
       <Link to={author.path}><Button variant="primary" className="buttonCard">{t('more')}</Button></Link>
     </Card.Body>

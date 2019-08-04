@@ -1,16 +1,17 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation, withTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
-import i18n from 'i18next';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Search from '../components/Search';
+import '../components/translate/i18n';
 
 
 const Authors = (props) => {
   const { authors } = props;
+  const { i18n } = useTranslation();
   const authorsWithSelectedLang = authors.filter(it => it.node.frontmatter.lng === i18n.language);
   return (
     <ul className="ml-0">
@@ -44,33 +45,17 @@ query {
 }
 `;
 
-class ListPage extends React.Component {
-  constructor(props) {
-    super(props);
-    const { data } = this.props;
+const ListPage = ({ t, data }) => (
+  <div>
+    <Layout />
+    <main>
+      <SEO title="Page two" />
+      <Authors authors={data.allJavascriptFrontmatter.edges} />
+    </main>
+    <footer>{t('footer')}</footer>
+  </div>
+);
 
-    if (data.allJavascriptFrontmatter) {
-      this.state = { authors: data.allJavascriptFrontmatter.edges };
-    } else {
-      this.state = { authors: {} };
-    }
-  }
-
-  render() {
-    const { authors } = this.state;
-    const { t } = this.props;
-    return (
-      <div>
-        <Layout />
-        <main>
-          <SEO title="Page two" />
-          <Authors authors={authors} />
-        </main>
-        <footer>{t('footer')}</footer>
-      </div>
-    );
-  }
-}
 
 export default withTranslation()(ListPage);
 

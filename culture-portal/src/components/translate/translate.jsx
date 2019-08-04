@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 import { useTranslation } from 'react-i18next';
 import { navigate } from 'gatsby';
 
 const Translate = () => {
   const { t, i18n } = useTranslation();
-  const [value, setCount] = useState(i18n.language);
-
+  const value = i18n.language;
   const changeLanguage = (locale) => {
     i18n.changeLanguage(locale);
     // eslint-disable-next-line no-undef
+    // set .slice(3) for production
     const page = window.location.pathname.split('/').slice(2).join('/');
     navigate(`/${locale}/${page}`);
   };
 
   const handleChange = (event) => {
     changeLanguage(`${event.target.value}`);
-    setCount(`${event.target.value}`);
   };
 
   return (
