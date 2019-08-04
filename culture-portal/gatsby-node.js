@@ -41,12 +41,10 @@ exports.createPages = async ({ actions, graphql }) => {
 
   const indexPage = path.resolve('src/pages/index.js');
   const searchPage = path.resolve('src/pages/search.js');
-  const page2 = path.resolve('src/pages/page-2.js');
   ['en', 'ru', 'by'].forEach(
     (lang) => {
       createPage({ path: `/${lang}/`, component: indexPage });
       createPage({ path: `/${lang}/search`, component: searchPage });
-      createPage({ path: `/${lang}/page-2`, component: page2 });
     },
   );
 };
