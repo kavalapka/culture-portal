@@ -1,5 +1,5 @@
 import Footer from './footer';
 
-import './footer.css';
+import './footer.scss';
 
 export default Footer;
