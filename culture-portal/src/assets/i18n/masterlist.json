@@ -38,5 +38,6 @@
       "youtube": "string",
       "photo": "string"
     }
-  ]
+  ],
+  "map": "string"
 }
