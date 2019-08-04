@@ -25,10 +25,9 @@ const Map = ({ locations }) => {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <section className="map">
       <h3>{t('map')}</h3>
       <MapComponent
-        className="map"
         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKM45AYokEwz1P5vHnwYGRKhlN_wz8e2A"
         loadingElement={<div style={{ height: '100%' }} />}
         containerElement={<div style={{ height: '400px' }} />}
