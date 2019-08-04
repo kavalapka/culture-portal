@@ -1,7 +1,13 @@
+.exhibition h1 {
+  font-weight: 500;
+  color: #40589A;
+}
+
 .exhib__group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 120px;
 }
 
 .exhib__card {

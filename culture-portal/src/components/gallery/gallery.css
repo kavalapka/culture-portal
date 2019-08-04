@@ -6,6 +6,10 @@
 	opacity: 0.5;
 }
 
+.carousel.carousel-slider {
+  margin-bottom: 120px;
+}
+
 .carousel .control-dots .dot.selected,
 .carousel .control-dots .dot:hover {
 	border: 3px solid #FFFFFF;
@@ -33,21 +37,15 @@
 	border-bottom: 15px solid transparent;
 }
 
-
-.photo_gallery {
-	margin: 100px auto;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 44px;
-	line-height: 52px;
-
-}
-
 .main_slider_img {
 	margin: 0;
 }
 
 .carousel .slide {
 	background: transparent;
+}
+
+.gallery h1 {
+  font-weight: 500;
+  color: #40589A;
 }

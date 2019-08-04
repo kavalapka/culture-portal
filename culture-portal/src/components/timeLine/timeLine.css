@@ -1,9 +1,14 @@
 @import '~material-design-icons/iconfont/material-icons.css';
 
-.timeline_wrapper {
-  margin: 25px 90px;
-}
-
 .timeline--wrapper {
   padding: 0;
+}
+
+.timeline_wrapper h1 {
+  font-weight: 500;
+  color: #40589A;
+}
+
+.timeline{
+  margin: 50px auto 120px auto;
 }

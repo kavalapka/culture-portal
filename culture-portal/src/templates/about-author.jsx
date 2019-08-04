@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import Layout from '../components/layout';
 import TimeLine from '../components/timeLine';
@@ -17,6 +18,8 @@ export default function Template(props) {
   const { frontmatter } = data.javascriptFrontmatter;
   const locations = [frontmatter.birthPlaceLocation];
   frontmatter.exhibitions.forEach(exh => locations.push(exh.location));
+  const { t } = useTranslation();
+
   return (
     <div>
       <Layout />
@@ -30,7 +33,7 @@ export default function Template(props) {
           <Map locations={locations} />
         </div>
       </main>
-      <footer>© Портал белорусских фотографов 2019</footer>
+      <footer>{t('footer')}</footer>
     </div>
   );
 }

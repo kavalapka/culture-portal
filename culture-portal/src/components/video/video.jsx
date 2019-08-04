@@ -28,7 +28,7 @@ class Video extends React.Component {
       autoplay: 1,
     };
     return (
-      <div className="video-block">
+      <section className="video-block">
         <ModalVideo
           channel="youtube"
           isOpen={isOpen}
@@ -38,7 +38,7 @@ class Video extends React.Component {
           onClose={() => this.setState({ isOpen: false })}
         />
         <Button variant="primary" onClick={this.openModal}>{t('Open Video')}</Button>
-      </div>
+      </section>
     );
   }
 }

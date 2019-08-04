@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { uniqueId } from 'lodash';
@@ -12,8 +12,8 @@ const Gallery = (props) => {
   const { data } = props;
 
   return (
-    <Fragment>
-      <h3 className="photo_gallery">{t('gallery')}</h3>
+    <section className="gallery">
+      <h3>{t('gallery')}</h3>
       <Carousel
         width="100%"
         dynamicHeight
@@ -31,7 +31,7 @@ const Gallery = (props) => {
         ))
         }
       </Carousel>
-    </Fragment>
+    </section>
   );
 };
 

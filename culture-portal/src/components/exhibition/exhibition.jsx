@@ -9,8 +9,8 @@ import Photo from '../image';
 const Exhibition = ({ exhibitions }) => {
   const { t } = useTranslation();
   return (
-    <div>
-      <h1>{t('Exhibitions')}</h1>
+    <section className="exhibition">
+      <h3>{t('Exhibitions')}</h3>
       <div className="exhib__group">
         {
         exhibitions.map(exh => (
@@ -26,7 +26,7 @@ const Exhibition = ({ exhibitions }) => {
         ))
       }
       </div>
-    </div>
+    </section>
   );
 };
 

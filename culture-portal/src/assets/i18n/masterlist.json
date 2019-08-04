@@ -12,32 +12,16 @@
   "belorussian": "string",
   "english": "string",
   "home": "string",
-  "author-of-the-day": "string",
   "photographer": "string",
   "day": "string",
   "more": "string",
   "our": "string",
   "team": "string",
   "timeline": "string",
-  "gallery": "string",
-  "slider":"object",
   "Exhibitions": "string",
   "Open Video": "string",
-  "authors": [
-    {
-      "id": "number",
-      "name": "string",
-      "science": "string",
-      "birth-date": "string",
-      "birth-place": "string",
-      "education": "string",
-      "activity": "object",
-      "family": "string",
-      "death": "string",
-      "exhibitions": "object",
-      "youtube": "string",
-      "photo": "string"
-    }
-  ],
+  "gallery": "string",
+  "slider": "object",
+  "footer": "string",
   "map": "string"
 }

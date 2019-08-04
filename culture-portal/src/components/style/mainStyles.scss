@@ -2,18 +2,27 @@
 body{
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
     font-size: 18px;
-    &{
+    &, h3, h2, h1{
         font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif; 
     }
 }
+h3{
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:45px;
+}
 header{
-    opacity:1;
+    margin-bottom:100px;
+    padding-top:15px;
 }
 .navbar, main, footer{
     max-width:960px;
-    padding: 0px 1.0875rem 1.45rem;
+    padding: 0px 1.0875rem 0px 1.0875rem;
     margin:0 auto;
-    z-index:110;
+}
+
+footer{
+    padding-bottom:1.45rem;
 }
 
 a{
@@ -36,7 +45,7 @@ a{
 
 .background{
     position: relative;
-    height:90vh;
+    height:100vh;
     &:before{
         content: "";
         position: absolute;
@@ -44,11 +53,9 @@ a{
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 1;
         background-image: url('../../images/back_3.jpg');
         background-attachment: fixed;
         background-size:cover;
-        opacity: 0.9;
         background-blend-mode: multiply;
     }
 }
@@ -58,6 +65,6 @@ a{
         display:none;
     }
     .background{
-        height:fit-content;
+        height:12vh;
     }
   }
